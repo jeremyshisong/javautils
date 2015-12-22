@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sweety</artifactId>
+        <groupId>com.orange</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>groovy</artifactId>
+
+
+    <repositories>
+        <repository>
+            <id>nhnopensource.maven.repo</id>
+            <url>https://github.com/nhnopensource/nhnopensource.maven.repo/raw/master/releases</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Following dependency is mandatory -->
+        <dependency>
+            <groupId>org.ngrinder</groupId>
+            <artifactId>ngrinder-groovy</artifactId>
+            <version>3.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.picocontainer</groupId>
+                    <artifactId>picocontainer</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>com.meizu</groupId>
+            <artifactId>galaxy-search-service</artifactId>
+            <version>1.4.0-RC05</version>
+
+            <exclusions>
+
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+
+
+
+                <exclusion>
+                    <groupId>com.meizu.galaxy2</groupId>
+                    <artifactId>galaxy2-common</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.meizu.galaxy</groupId>
+                    <artifactId>galaxy-common</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.meizu.galaxy</groupId>
+                    <artifactId>galaxy-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.meizu.galaxy2</groupId>
+                    <artifactId>galaxy2-kiev-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.meizu.galaxy</groupId>
+                    <artifactId>galaxy-search-dao</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-io</groupId>
+                    <artifactId>commons-io</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-lang</groupId>
+                    <artifactId>commons-lang</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-io</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+
+
+                <exclusion>
+                    <groupId>org.ow2.asm</groupId>
+                    <artifactId>asm</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
+
+                <exclusion>
+                    <groupId>org.picocontainer</groupId>
+                    <artifactId>picocontainer</artifactId>
+                </exclusion>
+
+
+
+
+
+            </exclusions>
+        </dependency>
+        <!-- Add the dependencies -->
+        <!--
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+         -->
+        <!-- Put your private library like this -->
+        <!--
+        <dependency>
+            <groupId>your_lib</groupId>
+            <artifactId>your_lib</artifactId>
+            <version>your_lib_version</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/hello.jar</systemPath>
+        </dependency>
+        -->
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalProjectnatures>
+                        <projectnature>
+                            org.eclipse.jdt.groovy.core.groovyNature
+                        </projectnature>
+                        <projectnature>
+                            org.eclipse.m2e.core.maven2Nature
+                        </projectnature>
+                    </additionalProjectnatures>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+
+</project>

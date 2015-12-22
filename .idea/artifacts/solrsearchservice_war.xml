@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="solrsearchservice:war">
+    <output-path>$PROJECT_DIR$/solrsearchservice/target</output-path>
+    <root id="archive" name="solrsearchservice-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="solrsearchservice:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.meizu:galaxy-app:1.4.0-RC02">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-app/1.4.0-RC02/galaxy-app-1.4.0-RC02.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-app/1.4.0-RC02/galaxy-app-1.4.0-RC02-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-app/1.4.0-RC02/galaxy-app-1.4.0-RC02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

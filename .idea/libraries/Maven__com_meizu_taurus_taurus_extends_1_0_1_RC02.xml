@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.meizu.taurus:taurus-extends:1.0.1-RC02">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/taurus/taurus-extends/1.0.1-RC02/taurus-extends-1.0.1-RC02.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/taurus/taurus-extends/1.0.1-RC02/taurus-extends-1.0.1-RC02-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/taurus/taurus-extends/1.0.1-RC02/taurus-extends-1.0.1-RC02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

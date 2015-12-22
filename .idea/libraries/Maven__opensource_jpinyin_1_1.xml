@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: opensource:jpinyin:1.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/opensource/jpinyin/1.1/jpinyin-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/opensource/jpinyin/1.1/jpinyin-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/opensource/jpinyin/1.1/jpinyin-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

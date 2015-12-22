@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gamesearchservice:war">
+    <output-path>$PROJECT_DIR$/gamesearchservice/target</output-path>
+    <root id="archive" name="gamesearchservice-1.0.1-RC01.war">
+      <element id="artifact" artifact-name="gamesearchservice:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="videosearch:war">
+    <output-path>$PROJECT_DIR$/videosearch/target</output-path>
+    <root id="archive" name="videosearch-1.0.0.war">
+      <element id="artifact" artifact-name="videosearch:war exploded" />
+    </root>
+  </artifact>
+</component>

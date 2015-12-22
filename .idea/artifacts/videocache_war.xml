@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="videocache:war">
+    <output-path>$PROJECT_DIR$/videocache/target</output-path>
+    <root id="archive" name="videocache-1.0.0.war">
+      <element id="artifact" artifact-name="videocache:war exploded" />
+    </root>
+  </artifact>
+</component>

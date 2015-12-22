@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.meizu:galaxy-search-service:1.4.0-RC03">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-search-service/1.4.0-RC03/galaxy-search-service-1.4.0-RC03.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-search-service/1.4.0-RC03/galaxy-search-service-1.4.0-RC03-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-search-service/1.4.0-RC03/galaxy-search-service-1.4.0-RC03-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
