@@ -29,11 +29,13 @@
         <module name="httpclietn" />
         <module name="jetty" />
         <module name="kiev_client" />
+        <module name="o2osearchservice" />
         <module name="searchservice" />
         <module name="server" />
         <module name="utils" />
         <module name="videocache" />
         <module name="videosearch" />
+        <module name="videosearchservice" />
       </profile>
       <profile default="false" name="Annotation profile for httpclient-cache" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -81,6 +83,7 @@
       <module name="httpmime" target="1.6" />
       <module name="jetty" target="1.5" />
       <module name="kiev_client" target="1.5" />
+      <module name="o2osearchservice" target="1.5" />
       <module name="searchservice" target="1.5" />
       <module name="server" target="1.5" />
       <module name="solrsearchservice" target="1.5" />
@@ -88,6 +91,7 @@
       <module name="utils" target="1.5" />
       <module name="videocache" target="1.5" />
       <module name="videosearch" target="1.5" />
+      <module name="videosearchservice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

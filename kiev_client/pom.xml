@@ -18,6 +18,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.meizu.galaxy2</groupId>
+            <artifactId>galaxy2-o2o-kiev</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.meizu.kiev</groupId>
             <artifactId>meizu-kiev</artifactId>
             <version>0.8.1-RC01</version>
@@ -25,7 +30,7 @@
         <dependency>
             <groupId>com.meizu.galaxy2</groupId>
             <artifactId>galaxy2-biz-api</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.meizu</groupId>

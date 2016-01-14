@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:kiev="http://www.meizu.com/kiev/schema/service"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
+
+    <kiev:client loadbalancer="roundrobin" timeout="50000"
+                 retry="5"/>
+    <kiev:registry
+            url="zookeeper://172.16.113.98:2182,172.16.113.99:2182?timeout=30000"/>
+
+    <kiev:stub id="videoSearchService" node="/service/search/video" serviceName="videoSearchService"
+               interface="com.meizu.video.service.VideoSearchService" />
+
+    <kiev:stub id="videoAutoComplete" node="/service/search/videoDrop" serviceName="videoAutoComplete"
+               interface="com.meizu.video.service.AutoComplete" />
+
+    <kiev:stub id="browserAutoComplete" node="/service/search/browserDrop" serviceName="browserAutoComplete"
+               interface="com.meizu.video.service.AutoComplete" />
+
+    <kiev:stub id="videoInfos" node="/service/search/Info" serviceName="videoInfos"
+               interface="com.meizu.video.service.VideoInfos" />
+    <!-- 延迟初始化 -->
+    <bean class="hello.utils.LazyBean" init-method="lazy"/>
+    <context:annotation-config/>
+    <context:component-scan base-package="hello.controller"/>
+</beans>

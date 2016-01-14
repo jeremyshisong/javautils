@@ -7,13 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.orange</groupId>
-    <artifactId>o2osearchservice4test</artifactId>
-    <version>0.0.1</version>
+    <artifactId>videosearchservice</artifactId>
     <packaging>war</packaging>
-
-    <name>o2osearchservice4test</name>
-    <url>http://maven.apache.org</url>
-
+    <version>1.0.0</version>
+    <name>videosearchservice</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
@@ -26,24 +23,9 @@
             <version>1.0.0-RC04</version>
         </dependency>
         <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-o2o-kiev</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-biz-api</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-kiev-api</artifactId>
-            <version>0.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-common</artifactId>
-            <version>0.1.7</version>
+            <groupId>com.meizu</groupId>
+            <artifactId>galaxy-video</artifactId>
+            <version>1.0.1-RC22</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>

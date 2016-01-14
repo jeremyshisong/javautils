@@ -48,7 +48,30 @@ public class SearchController {
     public ModelAndView handleAppSearchRequest(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap, ParamsVO paramsVO) throws ServletException, IOException {
         String radio = request.getParameter("radiobutton");
         O2OSearchService.Result results = null;
-        String ret = null;
+        String ret;
+        String sort = request.getParameter("sort");
+        if (StringUtils.isNotBlank(sort)) {
+            O2OSearchService.SortBy condition;
+            int isort = Integer.valueOf(sort);
+            switch (isort) {
+                case 0:
+                    condition = O2OSearchService.SortBy.DEFAULT;
+                    break;
+                case 1:
+                    condition = O2OSearchService.SortBy.DISTANCE;
+                    break;
+                case 2:
+                    condition = O2OSearchService.SortBy.LOWEST_PRICE;
+                    break;
+                case 3:
+                    condition = O2OSearchService.SortBy.LATEST_PUBLISH;
+                    break;
+                default:
+                    condition = O2OSearchService.SortBy.DEFAULT;
+            }
+            paramsVO.setCondition(condition);
+            modelMap.put("sort",sort);
+        }
         try {
             if ("business".equals(radio)) {
                 if (StringUtils.isNotBlank(paramsVO.getKeyword())) {
@@ -61,8 +84,11 @@ public class SearchController {
                 BeanCopyer.copy(paramsVO, param);
                 if (StringUtils.isNotBlank(paramsVO.getBref())) {
                     param.setKeyword(paramsVO.getBref());
-                    results = o2oSearchService.suggest(param);
                 }
+                if (StringUtils.isNotBlank(paramsVO.getSuggestCity())) {
+                    param.setCity(paramsVO.getSuggestCity());
+                }
+                results = o2oSearchService.suggest(param);
             }
         } catch (Exception e) {
         }

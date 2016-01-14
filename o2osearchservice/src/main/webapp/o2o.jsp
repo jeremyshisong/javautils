@@ -363,10 +363,16 @@
                 <td> 城市</td>
             </tr>
             <tr class="">
+                <td> areaFilter:</td>
+                <td><input type="text" name="areaFilter" id="areaFilter"
+                           value=${areaFilter}></td>
+                <td> 区域</td>
+            </tr>
+            <tr class="">
                 <td> longitude:</td>
                 <td><input type="text" name="longitude" id="longitude"
                            value=${longitude}></td>
-                <td> 经度:</td>
+                <td> 经度</td>
             </tr>
             <tr class="">
                 <td> latitude:</td>
@@ -375,26 +381,37 @@
                 <td> 纬度</td>
             </tr>
             <tr class="">
-                <td> areaFilter:</td>
-                <td><input type="text" name="areaFilter" id="areaFilter"
-                           value=${areaFilter}></td>
-                <td> 区域</td>
-            </tr>
-            <tr class="">
                 <td> page:</td>
                 <td><input type="text" name="page" id="page"
                            value=${page}></td>
                 <td> 页数</td>
             </tr>
+            <tr class="">
+                <td> sort:</td>
+                <td><select name="sort" id="sort">
+                        <option value="0" ${sort=="0"?'selected':''}>默认</option>
+                        <option value="1" ${sort=="1"?'selected':''}>距离最近</option>
+                        <option value="2" ${sort=="2"?'selected':''}>价格最低</option>
+                        <option value="3" ${sort=="3"?'selected':''}>发布最新</option>
+                    </select>
+                </td>
+                <td> 排序条件</td>
+            </tr>
             </tbody>
-
         </table>
     </div>
     <div id="suggest">
         <table id="api_params_72" class="params">
             <tbody>
             <tr class="">
+                <td> keyword:</td>
                 <td><input type="text" name="bref" id="bref" value=${bref}></td>
+                <td> 关键词</td>
+            </tr>
+            <tr class="">
+                <td> city:</td>
+                <td><input type="text" name="suggestCity" id="suggestCity" value=${suggestCity}></td>
+                <td> 城市</td>
             </tr>
             </tbody>
         </table>

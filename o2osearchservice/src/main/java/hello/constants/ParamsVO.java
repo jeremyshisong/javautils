@@ -16,6 +16,7 @@ public class ParamsVO implements Serializable {
     private int page;
     private String keyword;
     private String bref;
+    private String suggestCity;
 
     // 经纬度
     private double latitude;
@@ -201,5 +202,13 @@ public class ParamsVO implements Serializable {
 
     public void setBref(String bref) {
         this.bref = bref;
+    }
+
+    public String getSuggestCity() {
+        return suggestCity;
+    }
+
+    public void setSuggestCity(String suggestCity) {
+        this.suggestCity = suggestCity;
     }
 }

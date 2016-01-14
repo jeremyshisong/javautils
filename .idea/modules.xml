@@ -8,12 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/httpclient/httpclietn.iml" filepath="$PROJECT_DIR$/httpclient/httpclietn.iml" />
       <module fileurl="file://$PROJECT_DIR$/jetty/jetty.iml" filepath="$PROJECT_DIR$/jetty/jetty.iml" />
       <module fileurl="file://$PROJECT_DIR$/kiev_client/kiev_client.iml" filepath="$PROJECT_DIR$/kiev_client/kiev_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" filepath="$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchservice/searchservice.iml" filepath="$PROJECT_DIR$/searchservice/searchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/server.iml" filepath="$PROJECT_DIR$/httpclient/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/sweety.iml" filepath="$PROJECT_DIR$/sweety.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/videocache/videocache.iml" filepath="$PROJECT_DIR$/videocache/videocache.iml" />
       <module fileurl="file://$PROJECT_DIR$/videosearch/videosearch.iml" filepath="$PROJECT_DIR$/videosearch/videosearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videosearchservice/videosearchservice.iml" filepath="$PROJECT_DIR$/videosearchservice/videosearchservice.iml" />
     </modules>
   </component>
 </project>

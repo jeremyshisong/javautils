@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.meizu:galaxy-video:1.0.1-RC22">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-video/1.0.1-RC22/galaxy-video-1.0.1-RC22.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-video/1.0.1-RC22/galaxy-video-1.0.1-RC22-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/meizu/galaxy-video/1.0.1-RC22/galaxy-video-1.0.1-RC22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
