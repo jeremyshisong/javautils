@@ -16,7 +16,7 @@
                serviceName="o2oSearchService" interface="com.meizu.galaxy2.biz.api.O2OSearchService" loadbalancer="roundrobin" timeout="3000" retry="1" />
 
     <!-- 延迟初始化 -->
-    <bean class="hello.utils.LazyBean" init-method="lazy"/>
+    <bean class="hello.o2o.utils.LazyBean" init-method="lazy"/>
     <context:annotation-config/>
-    <context:component-scan base-package="hello.controller"/>
+    <context:component-scan base-package="hello.o2o.controller"/>
 </beans>

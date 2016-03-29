@@ -75,7 +75,7 @@
     </bean>
 
     <!-- 延迟初始化 -->
-    <bean class="hello.utils.LazyBean" init-method="lazy"/>
+    <bean class="LazyBean" init-method="lazy"/>
     <context:annotation-config/>
     <context:component-scan base-package="hello.service"/>
     <context:component-scan base-package="hello.controller"/>

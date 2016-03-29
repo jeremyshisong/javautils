@@ -5,7 +5,9 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Osmorc" url="file://$PROJECT_DIR$/../httpcomponents-client-4.5.1/httpclient-osgi" />
+    <file type="web" url="file://$PROJECT_DIR$/../../highle" />
     <file type="web" url="file://$PROJECT_DIR$/appsearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/ebooksearch" />
     <file type="web" url="file://$PROJECT_DIR$/gamesearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/o2osearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/searchservice" />
@@ -13,6 +15,7 @@
     <file type="web" url="file://$PROJECT_DIR$/videocache" />
     <file type="web" url="file://$PROJECT_DIR$/videosearch" />
     <file type="web" url="file://$PROJECT_DIR$/videosearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/../../redwine/o2osearchservice" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -23,6 +26,9 @@
         <option value="$PROJECT_DIR$/videosearch/pom.xml" />
         <option value="$PROJECT_DIR$/videocache/pom.xml" />
         <option value="$PROJECT_DIR$/videosearchservice/pom.xml" />
+        <option value="$PROJECT_DIR$/../../gzip/pom.xml" />
+        <option value="$PROJECT_DIR$/../../highle/pom.xml" />
+        <option value="$PROJECT_DIR$/readersearchservice/pom.xml" />
         <option value="$PROJECT_DIR$/o2osearchservice/pom.xml" />
       </list>
     </option>

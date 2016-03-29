@@ -77,6 +77,7 @@
     <orderEntry type="library" name="Maven: org.objenesis:objenesis:2.1" level="project" />
     <orderEntry type="library" name="Maven: de.javakaffee:kryo-serializers:0.26" level="project" />
     <orderEntry type="library" name="Maven: net.jpountz.lz4:lz4:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.28" level="project" />
     <orderEntry type="library" name="Maven: org.apache.sshd:sshd-core:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.mina:mina-core:2.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.solr:solr-solrj:5.2.1" level="project" />
@@ -144,6 +145,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-all:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:4.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.2.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.28" level="project" />
   </component>
 </module>

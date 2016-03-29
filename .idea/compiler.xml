@@ -22,14 +22,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="api4highle" />
         <module name="appsearchservice" />
+        <module name="ebooksearch" />
         <module name="groovy" />
+        <module name="gzip" />
+        <module name="highle" />
         <module name="httpclient" />
         <module name="httpclient (1)" />
         <module name="httpclietn" />
         <module name="jetty" />
+        <module name="jsonGzip (1)" />
         <module name="kiev_client" />
         <module name="o2osearchservice" />
+        <module name="readersearchservice" />
         <module name="searchservice" />
         <module name="server" />
         <module name="utils" />
@@ -69,10 +75,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api4highle" target="1.5" />
       <module name="appsearchservice" target="1.5" />
+      <module name="ebooksearch" target="1.5" />
       <module name="fluent-hc" target="1.6" />
       <module name="gamesearchservice" target="1.5" />
       <module name="groovy" target="1.5" />
+      <module name="gzip" target="1.5" />
+      <module name="highle" target="1.5" />
       <module name="httpclient" target="1.5" />
       <module name="httpclient (1)" target="1.5" />
       <module name="httpclient-cache" target="1.6" />
@@ -81,9 +91,15 @@
       <module name="httpclietn" target="1.5" />
       <module name="httpcomponents-client" target="1.6" />
       <module name="httpmime" target="1.6" />
+      <module name="javacode" target="1.5" />
       <module name="jetty" target="1.5" />
+      <module name="jsonGzip" target="1.5" />
+      <module name="jsonGzip (1)" target="1.5" />
       <module name="kiev_client" target="1.5" />
       <module name="o2osearchservice" target="1.5" />
+      <module name="o2osearchservice4test" target="1.5" />
+      <module name="readersearchservice" target="1.5" />
+      <module name="redwine" target="1.5" />
       <module name="searchservice" target="1.5" />
       <module name="server" target="1.5" />
       <module name="solrsearchservice" target="1.5" />

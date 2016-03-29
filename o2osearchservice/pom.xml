@@ -27,23 +27,8 @@
         </dependency>
         <dependency>
             <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-o2o-kiev</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
             <artifactId>galaxy2-biz-api</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-kiev-api</artifactId>
-            <version>0.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.meizu.galaxy2</groupId>
-            <artifactId>galaxy2-common</artifactId>
-            <version>0.1.7</version>
+            <version>0.0.3-RC10</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>

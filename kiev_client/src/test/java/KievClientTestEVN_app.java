@@ -55,13 +55,11 @@ public class KievClientTestEVN_app {
 		System.out.println(str2);
 
 	}
-	/*@Test
-	public void testSearchAblums() {
-		SearchResult str1 = videoSearchStub.searchVideosFromApi("名剑", 0, 8, 1, 2);
-		System.out.println(JSON.toJSONString(str1));
-		List<String> res= gameSolrSearchServiceStub.searchApps("微信",0,10);
-		System.out.println(JSON.toJSONString(res));
+	@Test
+	public void testgameSearchService() {
+		String ret= gameSearchService.search("赛车", "", "", true, "", "", "", "", 1, 0, 50);
+		System.out.println(JSON.toJSONString(ret));
 		//String res2= searchAppStub.searchPrefix("微",false,0,10);
 		//System.out.println(JSON.toJSONString(res2));
-	}*/
+	}
 }

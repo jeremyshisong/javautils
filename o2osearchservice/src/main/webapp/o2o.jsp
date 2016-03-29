@@ -345,7 +345,7 @@
 <h2>O2O搜索测试接口</h2>
 
 <form method="post"
-      action="<%=request.getContextPath()%>/search.do?method=o2o">
+      action="<%=request.getContextPath()%>/o2o.do?method=search">
     <div id="search">
         <table id="api_params_71" class="params">
             <tbody>
@@ -363,10 +363,16 @@
                 <td> 城市</td>
             </tr>
             <tr class="">
-                <td> areaFilter:</td>
-                <td><input type="text" name="areaFilter" id="areaFilter"
-                           value=${areaFilter}></td>
+                <td> region:</td>
+                <td><input type="text" name="region" id="region"
+                           value=${region}></td>
                 <td> 区域</td>
+            </tr>
+            <tr class="">
+                <td> district:</td>
+                <td><input type="text" name="district" id="district"
+                           value=${district}></td>
+                <td> 商圈</td>
             </tr>
             <tr class="">
                 <td> longitude:</td>
@@ -384,7 +390,13 @@
                 <td> page:</td>
                 <td><input type="text" name="page" id="page"
                            value=${page}></td>
-                <td> 页数</td>
+                <td> 第几页,默认0是第一页</td>
+            </tr>
+            <tr class="">
+                <td> limit:</td>
+                <td><input type="text" name="limit" id="limit"
+                           value=${limit}></td>
+                <td>每页记录数</td>
             </tr>
             <tr class="">
                 <td> sort:</td>
@@ -392,7 +404,8 @@
                         <option value="0" ${sort=="0"?'selected':''}>默认</option>
                         <option value="1" ${sort=="1"?'selected':''}>距离最近</option>
                         <option value="2" ${sort=="2"?'selected':''}>价格最低</option>
-                        <option value="3" ${sort=="3"?'selected':''}>发布最新</option>
+                        <option value="3" ${sort=="3"?'selected':''}>价格最高</option>
+                        <option value="4" ${sort=="3"?'selected':''}>评价最高</option>
                     </select>
                 </td>
                 <td> 排序条件</td>

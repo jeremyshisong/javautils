@@ -16,6 +16,8 @@
         <module>jetty</module>
         <module>utils</module>
         <module>videosearch</module>
+        <module>ebooksearch</module>
+        <module>o2osearchservice</module>
     </modules>
     <dependencies>
         <dependency>
