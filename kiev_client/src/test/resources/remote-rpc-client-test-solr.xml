@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:kiev="http://www.meizu.com/kiev/schema/service"
+	xsi:schemaLocation="  
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
+	<bean id="yardConfig" class="com.meizu.yard.spring.YardPropertiesHolder">
+		<property name="location">
+			<value>http://yard.meizu.com/conf/galaxy/video-task/V1.0</value>
+		</property>
+	</bean>
+	<!--172.16.200.239:2181,172.16.200.233:2181,172.16.200.234:2181-->
+	<!--172.16.113.98:2182,172.16.113.99:2182-->
+	<kiev:client loadbalancer="roundrobin" timeout="50000" retry="5" />
+	<kiev:registry
+		url="zookeeper://172.16.200.239:2181,172.16.200.233:2181,172.16.200.234:2181?timeout=50000000" />
+
+	<kiev:stub id="searchFacade" node="/service/galaxy2/SearchFacade" interface="com.meizu.galaxy2.api.SearchFacade" loadbalancer="roundrobin" timeout="3000" retry="1" />
+
+</beans>

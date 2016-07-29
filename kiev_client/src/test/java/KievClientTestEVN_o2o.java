@@ -48,7 +48,8 @@ public class KievClientTestEVN_o2o {
 		param.setLongitude(109.03989);
 		param.setLatitude(34.251904);
 		param.setAreaFilter("苏州工业园区");
-		param.setPage(10);
+		param.setPage(0);
+		param.setLimit(10);
 		O2OSearchService.Result result = o2oSearchService.searchMoreHotel(param);
 		System.out.println(JSON.toJSONString(result));
 		Assert.assertNotNull(result);

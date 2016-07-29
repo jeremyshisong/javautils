@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/appsearchservice/appsearchservice.iml" filepath="$PROJECT_DIR$/appsearchservice/appsearchservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ebooksearch/ebooksearch.iml" filepath="$PROJECT_DIR$/ebooksearch/ebooksearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/groovy/groovy.iml" filepath="$PROJECT_DIR$/groovy/groovy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gzip/gzip.iml" filepath="$PROJECT_DIR$/../gzip/gzip.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../gzip/gzip.iml" filepath="$PROJECT_DIR$/../../gzip/gzip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../highle/highle.iml" filepath="$PROJECT_DIR$/../highle/highle.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../highle/highle.iml" filepath="$PROJECT_DIR$/../../highle/highle.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/httpclient/httpclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/httpclietn.iml" filepath="$PROJECT_DIR$/httpclient/httpclietn.iml" />
@@ -13,10 +14,10 @@
       <module fileurl="file://$PROJECT_DIR$/jetty/jetty.iml" filepath="$PROJECT_DIR$/jetty/jetty.iml" />
       <module fileurl="file://$PROJECT_DIR$/kiev_client/kiev_client.iml" filepath="$PROJECT_DIR$/kiev_client/kiev_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" filepath="$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ebooksearch/readersearchservice.iml" filepath="$PROJECT_DIR$/ebooksearch/readersearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonGzip/redwine.iml" filepath="$PROJECT_DIR$/jsonGzip/redwine.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchservice/searchservice.iml" filepath="$PROJECT_DIR$/searchservice/searchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/server.iml" filepath="$PROJECT_DIR$/httpclient/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/songsearchservice/songsearchservice.iml" filepath="$PROJECT_DIR$/songsearchservice/songsearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/videocache/videocache.iml" filepath="$PROJECT_DIR$/videocache/videocache.iml" />
       <module fileurl="file://$PROJECT_DIR$/videosearch/videosearch.iml" filepath="$PROJECT_DIR$/videosearch/videosearch.iml" />

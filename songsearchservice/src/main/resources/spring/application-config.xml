@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:kiev="http://www.meizu.com/kiev/schema/service"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
+    <bean id="yardConfig" class="com.meizu.yard.spring.YardPropertiesHolder">
+        <property name="locations">
+            <list>
+                <value>http://yard.meizu.com/conf/galaxy/kiev/5.0</value>
+                <value>http://yard.meizu.com/conf/galaxy2/search-facade-kiev/V1.1</value>
+            </list>
+        </property>
+    </bean>
+    <kiev:client loadbalancer="roundrobin" timeout="50000"
+                 retry="5"/>
+    <kiev:registry
+            url="zookeeper://172.16.200.233:2181,172.16.200.234:2181,172.16.200.239:2181?timeout=30000"/>
+    <!--<kiev:stub id="searchService" node="/service/search/search" serviceName="searchService"
+               interface="com.meizu.app.solr.service.SearchService"/>-->
+    <kiev:stub id="searchFacade" interface="com.meizu.galaxy2.api.SearchFacade"
+               node="/service/galaxy2/SearchFacade"/>
+
+    <bean id="searchResultAdjuster" class="com.meizu.galaxy2.ganyu.SearchResultAdjuster" />
+
+    <!-- 监控统计配置 -->
+    <bean id="statisticConfig" class="com.meizu.redis.client.session.StatisticConfig">
+        <property name="serviceName" value="galaxyappService"/><!-- 业务名称 -->
+        <property name="resTimeThreholds"><!-- 统计响应时间(毫秒数)的分布。默认值:[0,5,10,15]表示会统计：[0-5,5-10,10-15,15-max]各自的数量。 -->
+            <list>
+                <value>0</value>
+                <value>5</value>
+                <value>10</value>
+                <value>15</value>
+            </list>
+        </property>
+        <property name="uploadPeriodMillis" value="60000"/><!--上传间隔毫秒数，默认是60000 -->
+        <property name="uploadUrl" value="${galaxy.redis.uploadUrl}"/>
+        <property name="maxSlowerCount" value="10"/><!-- 保留最慢的命令的个数 -->
+        <property name="maxLargerCount" value="10"/><!-- 保留长度最大的命令的个数 -->
+    </bean>
+
+    <bean id="poolConfig" class="org.apache.commons.pool2.impl.GenericObjectPoolConfig">
+        <property name="maxIdle" value="50" /><!-- 最大空闲数，非正数时不限制，默认为8  -->
+        <property name="maxTotal" value="${galaxy.app.search.maxTotal}" /><!-- pool可管理的所有对象数目，当为非正数时不限制，默认8 -->
+        <property name="maxWaitMillis" value="200" /><!-- borrowObject()最大block的毫秒数，非正数(可能)永远block，默认-1 -->
+        <property name="minIdle" value="5" /><!-- 最小的空闲数，默认0 -->
+        <property name="testWhileIdle" value="true" /><!-- 当idle时检测对象可用性,不可用会destroy（驱逐线程），默认false -->
+        <property name="testOnBorrow"  value="false" /><!-- 当borrow时检测对象可用性,不可用会destroy，默认false -->
+        <property name="testOnReturn"  value="false" /><!-- 当return时检测对象可用性,不可用会destroy，默认false -->
+    </bean>
+
+    <!--客户端配置-->
+    <bean id="redisClientConfig" class="com.meizu.redis.client.RedisClientConfig">
+        <property name="poolConfig" ref="poolConfig"/><!-- 连接池的配置 -->
+        <property name="statisticConfig" ref="statisticConfig"/><!-- 监控的配置 -->
+        <property name="zookeeperAddress" value="zookeeper://172.16.200.239:2181,172.16.200.233:2181,172.16.200.234:2181?timeout=30000"/><!-- zookeeper的地址 -->
+        <property name="zookeeperNodePath" value="/redis/proxy/appstore"/><!-- zookeeper保持Twemproxy的路径 -->
+        <property name="zookeeperTimeout" value="30000"/><!-- zookeeper的超时时间，默认30000 -->
+        <property name="keyPrefix" value="gal"/><!-- key的前缀，默认为空 -->
+        <property name="keySuffix" value=""/><!-- key的后缀，默认为空 -->
+        <property name="maxPacketSize" value="-1"/><!-- 最大的命令包长度(keys+values)，默认-1不限制 -->
+        <property name="monitoring" value="true"/><!-- 是否开启监控，默认为false -->
+        <property name="timeout" value="2000"/><!-- 命令的超时时间，默认2000ms -->
+    </bean>
+    <!--客户端-->
+    <bean id="proxyClient" class="com.meizu.redis.client.RedisClient">
+        <constructor-arg ref="redisClientConfig"/>
+        <!-- 监控对象RedisClient的别名，用以区分当有多个RedisClient的情况,默认是RedisClient-{JVM内递增序列} -->
+        <property name="alias" value="galaxy-app-RedisClient"/>
+    </bean>
+
+    <!-- 延迟初始化 -->
+    <bean class="hello.utils.LazyBean" init-method="lazy"/>
+    <context:annotation-config/>
+    <context:component-scan base-package="hello.service"/>
+    <context:component-scan base-package="hello.controller"/>
+</beans>
