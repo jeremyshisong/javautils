@@ -24,9 +24,8 @@
         <processorPath useClasspath="true" />
         <module name="api4highle" />
         <module name="appsearchservice" />
+        <module name="ebooksearch" />
         <module name="groovy" />
-        <module name="gzip" />
-        <module name="highle" />
         <module name="httpclient" />
         <module name="httpclient (1)" />
         <module name="httpclietn" />
@@ -76,6 +75,7 @@
     <bytecodeTargetLevel>
       <module name="api4highle" target="1.5" />
       <module name="appsearchservice" target="1.5" />
+      <module name="ebooksearch" target="1.5" />
       <module name="fluent-hc" target="1.6" />
       <module name="gamesearchservice" target="1.5" />
       <module name="groovy" target="1.5" />
@@ -90,6 +90,7 @@
       <module name="httpcomponents-client" target="1.6" />
       <module name="httpmime" target="1.6" />
       <module name="javacode" target="1.5" />
+      <module name="javautils" target="1.5" />
       <module name="jetty" target="1.5" />
       <module name="jsonGzip" target="1.5" />
       <module name="jsonGzip (1)" target="1.5" />

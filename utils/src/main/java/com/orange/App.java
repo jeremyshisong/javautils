@@ -19,7 +19,7 @@ public class App
     }
 
     public static String getPinYin(String src) {
-        char[] t1 = null;
+        char[] t1 = null ;
         t1 = src.toCharArray();
         String[] t2 = new String[t1.length];
         // 设置汉字拼音输出的格式

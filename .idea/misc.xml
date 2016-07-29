@@ -7,6 +7,7 @@
     <file type="Osmorc" url="file://$PROJECT_DIR$/../httpcomponents-client-4.5.1/httpclient-osgi" />
     <file type="web" url="file://$PROJECT_DIR$/../highle" />
     <file type="web" url="file://$PROJECT_DIR$/appsearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/ebooksearch" />
     <file type="web" url="file://$PROJECT_DIR$/gamesearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/o2osearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/searchservice" />
@@ -29,8 +30,6 @@
         <option value="$PROJECT_DIR$/o2osearchservice/pom.xml" />
         <option value="$PROJECT_DIR$/../../gzip/pom.xml" />
         <option value="$PROJECT_DIR$/../../highle/pom.xml" />
-        <option value="$PROJECT_DIR$/../highle/pom.xml" />
-        <option value="$PROJECT_DIR$/../gzip/pom.xml" />
         <option value="$PROJECT_DIR$/songsearchservice/pom.xml" />
       </list>
     </option>
