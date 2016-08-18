@@ -30,16 +30,22 @@
         <module name="httpclient (1)" />
         <module name="httpclietn" />
         <module name="jetty" />
+        <module name="jobseeker" />
         <module name="jsonGzip (1)" />
         <module name="kiev_client" />
         <module name="o2osearchservice" />
+        <module name="reorder" />
         <module name="searchservice" />
         <module name="server" />
         <module name="songsearchservice" />
         <module name="utils" />
+        <module name="video" />
         <module name="videocache" />
+        <module name="videoranking" />
         <module name="videosearch" />
+        <module name="videosearch (1)" />
         <module name="videosearchservice" />
+        <module name="washer" />
       </profile>
       <profile default="false" name="Annotation profile for httpclient-cache" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -72,40 +78,30 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api4highle" target="1.5" />
+    <bytecodeTargetLevel target="1.7">
       <module name="appsearchservice" target="1.5" />
       <module name="ebooksearch" target="1.5" />
-      <module name="fluent-hc" target="1.6" />
-      <module name="gamesearchservice" target="1.5" />
       <module name="groovy" target="1.5" />
-      <module name="gzip" target="1.5" />
-      <module name="highle" target="1.5" />
       <module name="httpclient" target="1.5" />
-      <module name="httpclient (1)" target="1.5" />
-      <module name="httpclient-cache" target="1.6" />
-      <module name="httpclient-osgi" target="1.6" />
-      <module name="httpclient-win" target="1.6" />
       <module name="httpclietn" target="1.5" />
-      <module name="httpcomponents-client" target="1.6" />
-      <module name="httpmime" target="1.6" />
-      <module name="javacode" target="1.5" />
       <module name="javautils" target="1.5" />
       <module name="jetty" target="1.5" />
-      <module name="jsonGzip" target="1.5" />
-      <module name="jsonGzip (1)" target="1.5" />
+      <module name="jobseeker" target="1.5" />
       <module name="kiev_client" target="1.5" />
       <module name="o2osearchservice" target="1.5" />
-      <module name="redwine" target="1.5" />
+      <module name="reorder" target="1.5" />
       <module name="searchservice" target="1.5" />
       <module name="server" target="1.5" />
-      <module name="solrsearchservice" target="1.5" />
       <module name="songsearchservice" target="1.5" />
-      <module name="sweety" target="1.5" />
       <module name="utils" target="1.5" />
+      <module name="video" target="1.5" />
       <module name="videocache" target="1.5" />
+      <module name="videodemo" target="1.5" />
+      <module name="videoranking" target="1.5" />
       <module name="videosearch" target="1.5" />
+      <module name="videosearch (1)" target="1.5" />
       <module name="videosearchservice" target="1.5" />
+      <module name="washer" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

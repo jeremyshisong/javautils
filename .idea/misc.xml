@@ -13,7 +13,10 @@
     <file type="web" url="file://$PROJECT_DIR$/searchservice" />
     <file type="web" url="file://$PROJECT_DIR$/solrsearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/songsearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/video" />
     <file type="web" url="file://$PROJECT_DIR$/videocache" />
+    <file type="web" url="file://$PROJECT_DIR$/videodemo" />
+    <file type="web" url="file://$PROJECT_DIR$/videoranking" />
     <file type="web" url="file://$PROJECT_DIR$/videosearch" />
     <file type="web" url="file://$PROJECT_DIR$/videosearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/../../highle" />
@@ -31,6 +34,8 @@
         <option value="$PROJECT_DIR$/../../gzip/pom.xml" />
         <option value="$PROJECT_DIR$/../../highle/pom.xml" />
         <option value="$PROJECT_DIR$/songsearchservice/pom.xml" />
+        <option value="$PROJECT_DIR$/videoranking/pom.xml" />
+        <option value="$PROJECT_DIR$/washer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -38,6 +43,7 @@
         <option value="$PROJECT_DIR$/gamesearchservice/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/solrsearchservice/pom.xml" />
+        <option value="$PROJECT_DIR$/video/pom.xml" />
       </set>
     </option>
   </component>
@@ -51,7 +57,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

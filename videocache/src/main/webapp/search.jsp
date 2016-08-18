@@ -423,6 +423,6 @@
                                                           onclick="hideOther(this.value)">
         联想 <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>
-<pre id="api_result_71" class="brush: js;">${results}</pre>
+<pre id="api_result_71" class="brush: js;">${searchModel}</pre>
 </body>
 </html>

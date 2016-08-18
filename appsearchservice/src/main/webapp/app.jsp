@@ -374,6 +374,6 @@
         联想 <input class="btn btn-success" type="submit" value="Request">
         <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>
-<pre id="api_result_71" class="brush: js;">${results}</pre>
+<pre id="api_result_71" class="brush: js;">${searchModel}</pre>
 </body>
 </html>

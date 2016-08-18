@@ -402,6 +402,6 @@
     <p class="api_test">
         <input class="btn btn-success" type="submit" value="Request">
 </form>
-<pre id="api_result_71" class="brush: js;">${results}</pre>
+<pre id="api_result_71" class="brush: js;">${searchModel}</pre>
 </body>
 </html>

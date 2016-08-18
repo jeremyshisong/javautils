@@ -11,16 +11,21 @@
       <module fileurl="file://$PROJECT_DIR$/httpclient/httpclietn.iml" filepath="$PROJECT_DIR$/httpclient/httpclietn.iml" />
       <module fileurl="file://$PROJECT_DIR$/javautils.iml" filepath="$PROJECT_DIR$/javautils.iml" />
       <module fileurl="file://$PROJECT_DIR$/jetty/jetty.iml" filepath="$PROJECT_DIR$/jetty/jetty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jobseeker/jobseeker.iml" filepath="$PROJECT_DIR$/jobseeker/jobseeker.iml" />
       <module fileurl="file://$PROJECT_DIR$/kiev_client/kiev_client.iml" filepath="$PROJECT_DIR$/kiev_client/kiev_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" filepath="$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonGzip/redwine.iml" filepath="$PROJECT_DIR$/jsonGzip/redwine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reorder/reorder.iml" filepath="$PROJECT_DIR$/reorder/reorder.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchservice/searchservice.iml" filepath="$PROJECT_DIR$/searchservice/searchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/server.iml" filepath="$PROJECT_DIR$/httpclient/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/songsearchservice/songsearchservice.iml" filepath="$PROJECT_DIR$/songsearchservice/songsearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/videocache/videocache.iml" filepath="$PROJECT_DIR$/videocache/videocache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoranking/videoranking.iml" filepath="$PROJECT_DIR$/videoranking/videoranking.iml" />
       <module fileurl="file://$PROJECT_DIR$/videosearch/videosearch.iml" filepath="$PROJECT_DIR$/videosearch/videosearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videodemo/videosearch (1).iml" filepath="$PROJECT_DIR$/videodemo/videosearch (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/videosearchservice/videosearchservice.iml" filepath="$PROJECT_DIR$/videosearchservice/videosearchservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/washer/washer.iml" filepath="$PROJECT_DIR$/washer/washer.iml" />
     </modules>
   </component>
 </project>

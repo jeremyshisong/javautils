@@ -402,6 +402,6 @@ table.params td .example_value:hover {
 			商户 <input type="radio" name="radiobutton" value="deal"> 团购 <span
 				id="radioType" style="visibility: hidden">${radio}</span>
 	</form>
-	<pre id="api_result_71" class="brush: js;">${results}</pre>
+	<pre id="api_result_71" class="brush: js;">${searchModel}</pre>
 </body>
 </html>

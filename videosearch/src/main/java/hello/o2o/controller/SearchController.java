@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.ServletException;
@@ -34,7 +35,7 @@ import java.lang.reflect.Field;
  * @author shisong
  */
 @Controller
-@RequestMapping("/search.do")
+@RequestMapping("/search")
 public class SearchController {
 
     private static Logger logger = Logger.getLogger(SearchController.class);
@@ -49,7 +50,7 @@ public class SearchController {
     public SearchController() {
     }
 
-    @RequestMapping
+    @RequestMapping(params = "method=video")
     public ModelAndView handleAppSearchRequest(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap, Param paramVO) throws ServletException, IOException {
         String keyword = paramVO.getKeyword();
         int type = StringUtils.isBlank(paramVO.getType())?0:Integer.valueOf(paramVO.getType());
@@ -86,6 +87,12 @@ public class SearchController {
         modelMap.put("radio", radio);
         loadParams(modelMap, paramVO);
         return new ModelAndView("video");
+    }
+
+    @RequestMapping(value = "/tudou")
+    @ResponseBody
+    public String handleTudouSearch(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap, Param paramVO) throws ServletException, IOException {
+        return "haha";
     }
 
     private void loadParams(ModelMap modelMap, Param param) {

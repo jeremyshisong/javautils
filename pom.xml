@@ -9,15 +9,19 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>kiev_client</module>
-        <module>appsearchservice</module>
-        <module>groovy</module>
-        <module>searchservice</module>
-        <module>jetty</module>
-        <module>utils</module>
-        <module>videosearch</module>
-        <module>ebooksearch</module>
-        <module>o2osearchservice</module>
+        <!--<module>kiev_client</module>-->
+        <!--<module>appsearchservice</module>-->
+        <!--<module>groovy</module>-->
+        <!--<module>searchservice</module>-->
+        <!--<module>jetty</module>-->
+        <!--<module>utils</module>-->
+        <!--<module>videosearch</module>-->
+        <!--<module>ebooksearch</module>-->
+        <!--<module>o2osearchservice</module>-->
+        <!--<module>jobseeker</module>-->
+        <!--<module>washer</module>-->
+        <!--<module>reorder</module>-->
+        <module>video</module>
     </modules>
     <dependencies>
         <dependency>
