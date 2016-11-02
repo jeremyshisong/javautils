@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/appsearchservice/appsearchservice.iml" filepath="$PROJECT_DIR$/appsearchservice/appsearchservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoLabel/autoLabel.iml" filepath="$PROJECT_DIR$/autoLabel/autoLabel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookName/bookName.iml" filepath="$PROJECT_DIR$/bookName/bookName.iml" />
       <module fileurl="file://$PROJECT_DIR$/ebooksearch/ebooksearch.iml" filepath="$PROJECT_DIR$/ebooksearch/ebooksearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileserver/fileserver.iml" filepath="$PROJECT_DIR$/fileserver/fileserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flagextract/flagextract.iml" filepath="$PROJECT_DIR$/flagextract/flagextract.iml" />
       <module fileurl="file://$PROJECT_DIR$/groovy/groovy.iml" filepath="$PROJECT_DIR$/groovy/groovy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../gzip/gzip.iml" filepath="$PROJECT_DIR$/../../gzip/gzip.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../highle/highle.iml" filepath="$PROJECT_DIR$/../../highle/highle.iml" />
@@ -17,9 +21,11 @@
       <module fileurl="file://$PROJECT_DIR$/jsonGzip/redwine.iml" filepath="$PROJECT_DIR$/jsonGzip/redwine.iml" />
       <module fileurl="file://$PROJECT_DIR$/reorder/reorder.iml" filepath="$PROJECT_DIR$/reorder/reorder.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchservice/searchservice.iml" filepath="$PROJECT_DIR$/searchservice/searchservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensitive/sensitive.iml" filepath="$PROJECT_DIR$/sensitive/sensitive.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient/server.iml" filepath="$PROJECT_DIR$/httpclient/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/songsearchservice/songsearchservice.iml" filepath="$PROJECT_DIR$/songsearchservice/songsearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoNL/videoNL.iml" filepath="$PROJECT_DIR$/videoNL/videoNL.iml" />
       <module fileurl="file://$PROJECT_DIR$/videocache/videocache.iml" filepath="$PROJECT_DIR$/videocache/videocache.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoranking/videoranking.iml" filepath="$PROJECT_DIR$/videoranking/videoranking.iml" />
       <module fileurl="file://$PROJECT_DIR$/videosearch/videosearch.iml" filepath="$PROJECT_DIR$/videosearch/videosearch.iml" />

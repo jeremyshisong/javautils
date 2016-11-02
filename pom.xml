@@ -22,6 +22,10 @@
         <!--<module>washer</module>-->
         <!--<module>reorder</module>-->
         <module>video</module>
+        <module>fileserver</module>
+        <module>sensitive</module>
+        <module>flagextract</module>
+        <module>bookName</module>
     </modules>
     <dependencies>
         <dependency>

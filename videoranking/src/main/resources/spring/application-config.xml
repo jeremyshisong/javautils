@@ -13,5 +13,5 @@
                node="/service/galaxy2/SearchFacade"/>
 
     <!-- 延迟初始化 -->
-    <bean class="hello.video.utils.LazyBean" init-method="lazy"/>
+    <bean class="hello.video.rank.utils.LazyBean" init-method="lazy"/>
 </beans>

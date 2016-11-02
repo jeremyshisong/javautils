@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>video ranking</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script>
+        function syntaxHighlight(json) {
+            if (typeof json != 'string') {
+                json = JSON.stringify(json, undefined, 4);
+            }
+            return json.replace(
+                    /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+                    function (match) {
+                        var cls = 'number';
+                        if (/^"/.test(match)) {
+                            if (/:$/.test(match)) {
+                                //"key"
+                                cls = 'text-error';
+                            } else {
+                                //"string"
+                                cls = 'text-info';
+                            }
+                        } else if (/true|false/.test(match)) {
+                            cls = 'text-warning';
+                        } else if (/null/.test(match)) {
+                            cls = 'text-success';
+                        }
+                        return '<span class="' + cls + '">' + match
+                                + '</span>';
+                    });
+        }
+        $(document).ready(function () {
+            var val1 = $("[id='tudou']").text();
+            val1 = jQuery.parseJSON(val1);
+            val1 = syntaxHighlight(val1);
+            $("[id='tudou']").html(val1);
+
+            var val2 = $("[id='local']").text();
+            val2 = jQuery.parseJSON(val2);
+            val2 = syntaxHighlight(val2);
+            $("[id='local']").html(val2);
+
+            var val3 = $("[id='rank']").text();
+            val3 = jQuery.parseJSON(val3);
+            val3 = syntaxHighlight(val3);
+            $("[id='rank']").html(val3);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"><span
+                            class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="#">视频重排序Demo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">土豆</a>
+                        </li>
+                        <li>
+                            <a href="#">本地</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search" th:action="@{/search/index}" method="get">
+                        <div class="form-group">
+                            <input id="keywords" name="keywords" th:value="${searchModel.keyword}" type="text"
+                                   class="form-control"/>
+                        </div>
+                        <button id="searchBtn" type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">土豆接口</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row clearfix">
+                <div class="col-md-4 column">
+                    <h3>
+                        <span class="label label-warning">土豆</span>
+                    </h3>
+
+
+                    <pre id="tudou" th:text="${searchModel.tudou}"></pre>
+                </div>
+                <div class="col-md-4 column">
+                    <h3>
+                        <span class="label label-default">本地</span>
+                    </h3>
+
+                    <pre id="local" th:text="${searchModel.local}" class="brush: js;"></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:kiev="http://www.meizu.com/kiev/schema/service"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+	 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
+    <kiev:client workThread="4" loadbalancer="roundrobin" timeout="50000000" retry="2"/>
+    <!-- 注册中心（目前仅zookeeper）://ip:port,ip:port?timeout=超时毫秒数,默认30000，不需要修改该参数-->
+    <kiev:registry url="zookeeper://172.16.200.239:2181,172.16.200.233:2181,172.16.200.234:2181?timeout=50000000"/>
+
+    <kiev:stub id="searchFacade" interface="com.meizu.galaxy2.api.SearchFacade"
+               node="/service/galaxy2/SearchFacade"/>
+
+    <!-- 延迟初始化 -->
+    <bean class="hello.fs.utils.LazyBean" init-method="lazy"/>
+</beans>
