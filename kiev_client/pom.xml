@@ -10,7 +10,7 @@
     <artifactId>kiev_client</artifactId>
     <packaging>jar</packaging>
 
-    <name>kiev_client</name>
+    <title>kiev_client</title>
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

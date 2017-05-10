@@ -1,0 +1,54 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+    <!-- mybatis-spring -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg>
+            <ref bean="sqlSessionFactory"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:mybatis/mybatis.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="dataSource" class="com.meizu.jdbc.druid.DruidBalanceDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="writeJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
+        <property name="readJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="meizu.com"/>
+        <property name="maxActive" value="140"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="3"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="360000"/>
+        <property name="validationQuery" value="select 1"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="50"/>
+    </bean>
+
+    <context:annotation-config/>
+
+    <context:component-scan base-package="com.nlp.repository.dao"/>
+    <context:component-scan base-package="com.nlp.indexing"/>
+    <context:component-scan base-package="com.nlp.classification"/>
+    <context:component-scan base-package="com.nlp.category"/>
+
+
+</beans>
+
+
+
+
+

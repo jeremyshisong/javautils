@@ -21,11 +21,17 @@
         <!--<module>jobseeker</module>-->
         <!--<module>washer</module>-->
         <!--<module>reorder</module>-->
-        <module>video</module>
         <module>fileserver</module>
         <module>sensitive</module>
         <module>flagextract</module>
         <module>bookName</module>
+        <module>picservice</module>
+        <module>capricorn-spider</module>
+        <module>cnword</module>
+        <module>textanalyze</module>
+        <module>classification</module>
+        <module>classification-demo</module>
+        <module>classification-demo</module>
     </modules>
     <dependencies>
         <dependency>

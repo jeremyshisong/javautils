@@ -10,7 +10,7 @@
     <artifactId>videoranking</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>videoranking</name>
+    <title>videoranking</title>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.vo.SecDrugsCate">
+    <sql id="secDrugsCate_DETAIL_COLUMN_LIST">
+         A.FCODE cateCode,
+         A.FNAME cateName,
+         A.FUPPER_CATE_CODE upperCateCode,
+         A.FMAIN_DRUGS_CODE mainDrugsCode
+    </sql>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getSecDrugsByUpper" resultType="com.klx.vo.SecDrugsCate" parameterType="hashmap">
+        SELECT
+        <include refid="secDrugsCate_DETAIL_COLUMN_LIST"/>
+        FROM tb_sec_drugs_cate A
+        where FUPPER_CATE_CODE = #{upper_code}
+    </select>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getAllCate" resultType="com.klx.vo.SecDrugsCate" parameterType="hashmap">
+        SELECT
+        <include refid="secDrugsCate_DETAIL_COLUMN_LIST"/>
+        ,B.FNAME upperCateName
+        FROM tb_sec_drugs_cate A
+        LEFT JOIN tb_top_drugs_cate B ON
+        A.FUPPER_CATE_CODE = B.FCODE
+    </select>
+
+</mapper>

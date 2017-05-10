@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.storage.vo.Drug">
+
+
+    <resultMap id="drugResultMap" type="Drug">
+        <id column="id" property="FID" jdbcType="INTEGER"/>
+
+
+        <result column="attentionItem" property="FATTENTION_ITEM" jdbcType="VARCHAR"/>
+        <result column="badReaction" property="FBAD_REACTION" jdbcType="VARCHAR"/>
+        <result column="cityCode" property="FCITY_CODE" jdbcType="VARCHAR"/>
+        <result column="commonName" property="FCOMMON_NAME" jdbcType="VARCHAR"/>
+        <result column="costPrice" property="FCOST_PRICE" jdbcType="DOUBLE"/>
+        <result column="durgCharacters" property="FDURG_CHARACTERS" jdbcType="VARCHAR"/>
+        <result column="durgComponent" property="FDURG_COMPONENT" jdbcType="VARCHAR"/>
+        <result column="durgToboo" property="FDURG_TOBOO" jdbcType="VARCHAR"/>
+        <result column="functionsIndicated" property="FFUNCTIONS_INDICATED" jdbcType="VARCHAR"/>
+        <result column="cateCode" property="FCATE_CODE" jdbcType="VARCHAR"/>
+        <result column="goodsCode" property="FDRUG_CODE" jdbcType="VARCHAR"/>
+        <result column="goodsName" property="FDRUG_NAME" jdbcType="VARCHAR"/>
+        <result column="goodsStatus" property="FDRUG_STATUS" jdbcType="VARCHAR"/>
+        <result column="goodsType" property="FDRUG_TYPE" jdbcType="VARCHAR"/>
+        <result column="isPrescriptionDrugs" property="FIS_PRESCRIPTION_DRUGS" jdbcType="VARCHAR"/>
+        <result column="manufacturerCode" property="FMANUFACTURER_CODE" jdbcType="VARCHAR"/>
+        <result column="memberPrice" property="FMEMBER_PRICE" jdbcType="DOUBLE"/>
+        <result column="posMemberPrice  " property="FPOS_MEMBER_PRICE" jdbcType="DOUBLE"/>
+        <result column="retailPrice" property="FRETAIL_PRICE" jdbcType="DOUBLE"/>
+        <result column="standard" property="FSTANDARD" jdbcType="VARCHAR"/>
+        <result column="storeCode" property="FSTORE_CODE" jdbcType="VARCHAR"/>
+        <result column="usagetxt" property="FUSAGE_TXT" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 插入指定数目的类目信息 -->
+    <insert id="addDrugs" useGeneratedKeys="true" parameterType="java.util.List">
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            SELECT
+            LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_drugs (
+
+        FATTENTION_ITEM,
+        FBAD_REACTION,
+        FCITY_CODE,
+        FCOMMON_NAME,
+        FCOST_PRICE,
+        FDURG_CHARACTERS,
+        FDURG_COMPONENT,
+        FDURG_TOBOO,
+        FFUNCTIONS_INDICATED,
+        FDRUG_CODE,
+        FDRUG_NAME,
+        FCATE_CODE,
+        FDRUG_STATUS,
+        FDRUG_TYPE,
+        FIS_PRESCRIPTION_DRUGS,
+        FMANUFACTURER_CODE,
+        FMEMBER_PRICE,
+        FPOS_MEMBER_PRICE,
+        FRETAIL_PRICE,
+        FSTANDARD,
+        FSTORE_CODE,
+        FUSAGE_TXT)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.attentionItem},#{item.badReaction},#{item.cityCode},#{item.commonName},#{item.costPrice},#{item.durgCharacters},#{item.durgComponent},#{item.durgToboo},#{item.functionsIndicated},#{item.goodsCode},#{item.goodsName},#{item.cateCode},#{item.goodsStatus},#{item.goodsType},#{item.isPrescriptionDrugs},#{item.manufacturerCode},#{item.memberPrice},#{item.posMemberPrice},#{item.retailPrice},#{item.standard},#{item.storeCode},#{item.usagetxt})
+        </foreach>
+    </insert>
+
+    <select id="getDrugNames" resultType="string" parameterType="hashmap">
+        SELECT
+        FDRUG_NAME
+        FROM tb_drugs ORDER  BY FID
+        limit #{start},#{count}
+    </select>
+
+</mapper>

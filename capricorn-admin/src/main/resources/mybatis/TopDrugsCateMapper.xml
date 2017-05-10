@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.vo.TopDrugsCate">
+    <sql id="topDrugsCate_DETAIL_COLUMN_LIST">
+		A.FCODE cateCode,
+		A.FNAME cateName
+	</sql>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getTopDrugs" resultType="com.klx.vo.TopDrugsCate" parameterType="hashmap">
+        SELECT
+        <include refid="topDrugsCate_DETAIL_COLUMN_LIST"/>
+        FROM tb_top_drugs_cate A
+    </select>
+
+</mapper>

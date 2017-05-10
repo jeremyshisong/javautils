@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.storage.vo.SecDrugsCate">
+    <sql id="SecDrugsCate_DETAIL_COLUMN_LIST">
+		A.FID id,
+		A.FCODE code,
+		A.FNAME title,
+		FUPPER_CATE_CODE upperCateCode,
+		FMAIN_DRUGS_CODE mainDrugsCode
+	</sql>
+
+    <resultMap id="secDrugsCateResultMap" type="SecDrugsCate">
+        <id column="id" property="fid" jdbcType="INTEGER"/>
+        <result column="code" property="fcode" jdbcType="INTEGER"/>
+        <result column="title" property="fname" jdbcType="VARCHAR"/>
+        <result column="upperCateCode" property="fupper_cate_code" jdbcType="VARCHAR"/>
+        <result column="mainDrugsCode" property="fmain_drugs_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 插入指定数目的类目信息 -->
+    <insert id="addSecDrugsCates" useGeneratedKeys="true" parameterType="java.util.List">
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            SELECT
+            LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_sec_drugs_cate (fcode,fname,fupper_cate_code,fmain_drugs_code)
+         VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.code},#{item.title},#{item.upperCateCode},#{item.mainDrugsCode})
+        </foreach>
+    </insert>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getSecNames" resultType="string" parameterType="hashmap">
+        SELECT
+        fname
+        FROM tb_sec_drugs_cate
+    </select>
+
+</mapper>

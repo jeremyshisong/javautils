@@ -322,7 +322,7 @@
         val = syntaxHighlight(val);
         $("[id='api_result_71']").html(val);
         var radioType = $("[id='radioType']").text();
-        var radioObject = $("[name='radiobutton']");
+        var radioObject = $("[title='radiobutton']");
         if (radioType.length == 0) {
             hideOther(radioObject[0].value);
         } else {
@@ -352,26 +352,26 @@
 
             <tr class="">
                 <td> keyword:</td>
-                <td><input type="text" name="keyword" id="keyword"
+                <td><input type="text" title="keyword" id="keyword"
                            value=${keyword}></td>
                 <td>关键词</td>
             </tr>
             <tr class="">
                 <td> type:</td>
-                <td><input type="text" name="type" id="type"
+                <td><input type="text" title="type" id="type"
                            value=${type}></td>
                 <td>频道类型:全部[0],电影[1],电视剧[2],综艺[3],动漫[4],教育[10],纪录片[11]
                     </td>
             </tr>
             <tr class="">
                 <td> support:</td>
-                <td><input type="text" name="support" id="support"
+                <td><input type="text" title="support" id="support"
                            value=${support}></td>
                 <td>设备类型:LETV[1],SOHU[2],IQIYI[4],TUDOU[8]</td>
             </tr>
             <tr class="">
                 <td> needVIP:</td>
-                <td><input type="text" name="needVIP" id="needVIP"
+                <td><input type="text" title="needVIP" id="needVIP"
                            value=${needVIP}></td>
                 <td>sdk是否支持会员</td>
             </tr>
@@ -383,15 +383,15 @@
         <table id="api_params_72" class="params">
             <tbody>
             <tr class="">
-                <td><input type="text" name="brief" id="brief" value=${brief}></td>
+                <td><input type="text" title="brief" id="brief" value=${brief}></td>
             </tr>
             </tbody>
         </table>
     </div>
     <p class="api_test">
 
-        <input type="radio" name="radiobutton" value="business" checked
-               onclick="hideOther(this.value)"> 搜索 <input type="radio" name="radiobutton" value="deal" onclick="hideOther(this.value)">
+        <input type="radio" title="radiobutton" value="business" checked
+               onclick="hideOther(this.value)"> 搜索 <input type="radio" title="radiobutton" value="deal" onclick="hideOther(this.value)">
         联想 <input class="btn btn-success" type="submit" value="Request">
         <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>

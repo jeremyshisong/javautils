@@ -6,23 +6,36 @@
     <file url="file://$PROJECT_DIR$/appsearchservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/autoLabel" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bookName" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/capricorn-spider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/classification" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/classification-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cnword" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ebooksearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flagextract" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gamesearchservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/groovy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/httpclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ik-analyzer-solr5" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jetty" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jobseeker" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kiev_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kwRunner" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/o2osearchservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/picservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reorder" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/searchservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/segment-analysis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sensitive" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/songsearchservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/textanalyze" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/videoDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/videoNL" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/videoranking" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/videorest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/videosearchservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/washer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wolfApp" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

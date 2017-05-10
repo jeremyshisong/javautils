@@ -7,6 +7,9 @@
     <file type="Osmorc" url="file://$PROJECT_DIR$/../httpcomponents-client-4.5.1/httpclient-osgi" />
     <file type="web" url="file://$PROJECT_DIR$/../highle" />
     <file type="web" url="file://$PROJECT_DIR$/appsearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/capricorn-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/capricorn-rest" />
+    <file type="web" url="file://$PROJECT_DIR$/classification-demo" />
     <file type="web" url="file://$PROJECT_DIR$/ebooksearch" />
     <file type="web" url="file://$PROJECT_DIR$/fileserver" />
     <file type="web" url="file://$PROJECT_DIR$/gamesearchservice" />
@@ -16,11 +19,13 @@
     <file type="web" url="file://$PROJECT_DIR$/songsearchservice" />
     <file type="web" url="file://$PROJECT_DIR$/video" />
     <file type="web" url="file://$PROJECT_DIR$/videocache" />
-    <file type="web" url="file://$PROJECT_DIR$/videodemo" />
+    <file type="web" url="file://$PROJECT_DIR$/videoDemo" />
     <file type="web" url="file://$PROJECT_DIR$/videoNL" />
     <file type="web" url="file://$PROJECT_DIR$/videoranking" />
+    <file type="web" url="file://$PROJECT_DIR$/videorest" />
     <file type="web" url="file://$PROJECT_DIR$/videosearch" />
     <file type="web" url="file://$PROJECT_DIR$/videosearchservice" />
+    <file type="web" url="file://$PROJECT_DIR$/wolfApp" />
     <file type="web" url="file://$PROJECT_DIR$/../../highle" />
   </component>
   <component name="MavenProjectsManager">
@@ -40,6 +45,20 @@
         <option value="$PROJECT_DIR$/washer/pom.xml" />
         <option value="$PROJECT_DIR$/videoNL/pom.xml" />
         <option value="$PROJECT_DIR$/autoLabel/pom.xml" />
+        <option value="$PROJECT_DIR$/picservice/pom.xml" />
+        <option value="$PROJECT_DIR$/wolfApp/pom.xml" />
+        <option value="$PROJECT_DIR$/spider/pom.xml" />
+        <option value="$PROJECT_DIR$/capricorn-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/capricorn-spider/pom.xml" />
+        <option value="$PROJECT_DIR$/capricorn-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/kwRunner/pom.xml" />
+        <option value="$PROJECT_DIR$/gamesearchservice/pom.xml" />
+        <option value="$PROJECT_DIR$/ik-analyzer-solr5/pom.xml" />
+        <option value="$PROJECT_DIR$/videoDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/videorest/pom.xml" />
+        <option value="$PROJECT_DIR$/segment-analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/classification/pom.xml" />
+        <option value="$PROJECT_DIR$/classification-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

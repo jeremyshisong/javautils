@@ -10,7 +10,7 @@
     <artifactId>videosearch</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>videosearch</name>
+    <title>videosearch</title>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

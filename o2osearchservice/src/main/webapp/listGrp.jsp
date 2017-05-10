@@ -334,61 +334,61 @@
             <tbody>
             <tr class="">
                 <td> category:</td>
-                <td><input type="text" name="category" id="category"
+                <td><input type="text" title="category" id="category"
                            value=${category}></td>
                 <td> 类型</td>
             </tr>
             <tr class="">
                 <td> subCat:</td>
-                <td><input type="text" name="subCat" id="subCat"
+                <td><input type="text" title="subCat" id="subCat"
                            value=${subCat}></td>
                 <td> 子类</td>
             </tr>
             <tr class="">
                 <td> city:</td>
-                <td><input type="text" name="city" id="city"
+                <td><input type="text" title="city" id="city"
                            value=${city}></td>
                 <td> 城市</td>
             </tr>
             <tr class="">
                 <td> region:</td>
-                <td><input type="text" name="region" id="region"
+                <td><input type="text" title="region" id="region"
                            value=${region}></td>
                 <td> 区域</td>
             </tr>
             <tr class="">
                 <td> district:</td>
-                <td><input type="text" name="district" id="district"
+                <td><input type="text" title="district" id="district"
                            value=${district}></td>
                 <td> 商圈</td>
             </tr>
             <tr class="">
                 <td> longitude:</td>
-                <td><input type="text" name="longitude" id="longitude"
+                <td><input type="text" title="longitude" id="longitude"
                            value=${longitude}></td>
                 <td> 经度</td>
             </tr>
             <tr class="">
                 <td> latitude:</td>
-                <td><input type="text" name="latitude" id="latitude"
+                <td><input type="text" title="latitude" id="latitude"
                            value=${latitude}></td>
                 <td> 纬度</td>
             </tr>
             <tr class="">
                 <td> page:</td>
-                <td><input type="text" name="page" id="page"
+                <td><input type="text" title="page" id="page"
                            value=${page}></td>
                 <td> 第几页,默认0是第一页</td>
             </tr>
             <tr class="">
                 <td> limit:</td>
-                <td><input type="text" name="limit" id="limit"
+                <td><input type="text" title="limit" id="limit"
                            value=${limit}></td>
                 <td>每页记录数</td>
             </tr>
             <tr class="">
                 <td> sort:</td>
-                <td><select name="sort" id="sort">
+                <td><select title="sort" id="sort">
                     <option value="0" ${sort=="0"?'selected':''}>离我最近</option>
                     <option value="1" ${sort=="1"?'selected':''}>价格最低</option>
                     <option value="2" ${sort=="2"?'selected':''}>最新发布</option>

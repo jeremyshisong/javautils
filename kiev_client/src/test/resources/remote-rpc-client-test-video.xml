@@ -5,12 +5,12 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
 
 	<!-- <bean id="propertyConfigurer" class="com.meizu.bs.PropertiesHolder"> 
-		<property name="locations"> <list> <value>http://conf.meizu.com/conf/galaxy/kiev/v1.1</value> 
-		</list> </property> <property name="order" value="1"/> <property name="ignoreUnresolvablePlaceholders" 
-		value="true" /> <property name="fileEncoding" value="UTF-8" /> </bean> -->
+		<property title="locations"> <list> <value>http://conf.meizu.com/conf/galaxy/kiev/v1.1</value>
+		</list> </property> <property title="order" value="1"/> <property title="ignoreUnresolvablePlaceholders"
+		value="true" /> <property title="fileEncoding" value="UTF-8" /> </bean> -->
 
 	<bean id="yardConfig" class="com.meizu.yard.spring.YardPropertiesHolder">
-		<property name="location">
+		<property title="location">
 			<value>http://yard.meizu.com/conf/galaxy/video-task/V1.0</value>
 		</property>
 	</bean>

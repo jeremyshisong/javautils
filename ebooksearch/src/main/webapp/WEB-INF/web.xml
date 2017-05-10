@@ -5,14 +5,14 @@
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
 
-	<display-name>121</display-name>
+	<display-title>121</display-title>
     
    <!--
 		- Location of the XML file that defines the root application context.
 		- Applied by ContextLoaderListener.
 	-->
 	<context-param>
-		<param-name>contextConfigLocation</param-name>
+		<param-title>contextConfigLocation</param-title>
 		<param-value>classpath:spring/spring-config.xml</param-value>
 	</context-param>
 
@@ -25,37 +25,37 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		- Servlet that dispatches request to registered handlers (Controller implementations).
 	-->
 	<servlet>
-		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-title>dispatcherServlet</servlet-title>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
-			<param-name>contextConfigLocation</param-name>
+			<param-title>contextConfigLocation</param-title>
 			<param-value>/WEB-INF/mvc-config.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-title>dispatcherServlet</servlet-title>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
+		<servlet-title>default</servlet-title>
 		<url-pattern>*.css</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
+		<servlet-title>default</servlet-title>
 		<url-pattern>*.gif</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
+		<servlet-title>default</servlet-title>
 		<url-pattern>*.jpg</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
+		<servlet-title>default</servlet-title>
 		<url-pattern>*.js</url-pattern>
 	</servlet-mapping>
 

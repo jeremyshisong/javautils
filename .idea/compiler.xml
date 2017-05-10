@@ -26,9 +26,13 @@
         <module name="appsearchservice" />
         <module name="autoLabel" />
         <module name="bookName" />
+        <module name="capricorn-admin" />
+        <module name="classification-demo" />
+        <module name="cnword" />
         <module name="ebooksearch" />
         <module name="fileserver" />
         <module name="flagextract" />
+        <module name="gametest" />
         <module name="groovy" />
         <module name="httpclient" />
         <module name="httpclient (1)" />
@@ -37,7 +41,9 @@
         <module name="jobseeker" />
         <module name="jsonGzip (1)" />
         <module name="kiev_client" />
+        <module name="kwRunner" />
         <module name="o2osearchservice" />
+        <module name="picservice" />
         <module name="reorder" />
         <module name="searchservice" />
         <module name="sensitive" />
@@ -46,12 +52,15 @@
         <module name="utils" />
         <module name="video" />
         <module name="videocache" />
+        <module name="videoDemo" />
         <module name="videoNL" />
         <module name="videoranking" />
+        <module name="videorest" />
         <module name="videosearch" />
         <module name="videosearch (1)" />
         <module name="videosearchservice" />
         <module name="washer" />
+        <module name="wolfApp" />
       </profile>
       <profile default="false" name="Annotation profile for httpclient-cache" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -83,34 +92,99 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for spider" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="spider" />
+      </profile>
+      <profile default="false" name="Annotation profile for capricorn-spider" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="capricorn-spider" />
+      </profile>
+      <profile default="false" name="Annotation profile for capricorn-rest" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="capricorn-rest" />
+      </profile>
+      <profile default="false" name="Annotation profile for ik-analyzer-solr5" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ik-analyzer-solr5" />
+      </profile>
+      <profile default="false" name="Annotation profile for jieba-analysis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="jieba-analysis" />
+      </profile>
+      <profile default="false" name="Annotation profile for textanalyze" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="textanalyze" />
+      </profile>
+      <profile default="false" name="Annotation profile for classification" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="classification" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="appsearchservice" target="1.5" />
       <module name="autoLabel" target="1.5" />
       <module name="bookName" target="1.5" />
+      <module name="capricorn-admin" target="1.5" />
+      <module name="capricorn-rest" target="1.6" />
+      <module name="capricorn-spider" target="1.6" />
+      <module name="classification" target="1.6" />
+      <module name="classification-demo" target="1.5" />
+      <module name="cnword" target="1.5" />
       <module name="ebooksearch" target="1.5" />
       <module name="fileserver" target="1.5" />
       <module name="flagextract" target="1.5" />
+      <module name="gametest" target="1.5" />
       <module name="groovy" target="1.5" />
       <module name="httpclient" target="1.5" />
       <module name="httpclietn" target="1.5" />
+      <module name="ik-analyzer-solr5" target="1.8" />
       <module name="javautils" target="1.5" />
       <module name="jetty" target="1.5" />
+      <module name="jieba-analysis" target="1.7" />
       <module name="jobseeker" target="1.5" />
       <module name="kiev_client" target="1.5" />
+      <module name="kwRunner" target="1.5" />
       <module name="o2osearchservice" target="1.5" />
+      <module name="picservice" target="1.5" />
       <module name="reorder" target="1.5" />
       <module name="searchservice" target="1.5" />
       <module name="sensitive" target="1.5" />
       <module name="server" target="1.5" />
       <module name="songsearchservice" target="1.5" />
+      <module name="spider" target="1.6" />
+      <module name="textanalyze" target="1.7" />
       <module name="utils" target="1.5" />
       <module name="videocache" target="1.5" />
+      <module name="videoDemo" target="1.5" />
       <module name="videoNL" target="1.5" />
       <module name="videoranking" target="1.5" />
+      <module name="videorest" target="1.5" />
       <module name="videosearch" target="1.5" />
       <module name="videosearchservice" target="1.5" />
       <module name="washer" target="1.5" />
+      <module name="wolfApp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

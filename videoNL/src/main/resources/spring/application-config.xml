@@ -12,5 +12,5 @@
     <kiev:stub id="videoSearchService" node="/service/search/video" serviceName="videoSearchService"
                interface="com.meizu.video.service.VideoSearchService"/>
     <!-- 延迟初始化 -->
-    <bean class="hello.nl.utils.LazyBean" init-method="lazy"/>
+    <bean class="hello.chan.utils.LazyBean" init-method="lazy"/>
 </beans>

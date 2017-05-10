@@ -307,7 +307,7 @@ table.params td .example_value:hover {
 		val = syntaxHighlight(val);
 		$("[id='api_result_71']").html(val);
 		var radioType = $("[id='radioType']").text();
-		var radioObject = $("[name='radiobutton']");
+		var radioObject = $("[title='radiobutton']");
 		for ( var i = 0; i < radioObject.length; i++) {
 			if (radioObject[i].value == radioType) {
 				radioObject[i].checked = true;
@@ -332,74 +332,74 @@ table.params td .example_value:hover {
 				<tr class="">
 					<td>q:</td>
 					<td>查询串</td>
-					<td><input type="text" name="q" id="q" value=${q}></td>
+					<td><input type="text" title="q" id="q" value=${q}></td>
 				</tr>
 				<tr class="">
 					<td>start:</td>
 					<td>第几条结果开始</td>
-					<td><input type="text" name="start" id="start" value=${start}></td>
+					<td><input type="text" title="start" id="start" value=${start}></td>
 				</tr>
 				<tr class="">
 					<td>limit:</td>
 					<td>条目数</td>
-					<td><input type="text" name="limit" id="limit" value=${limit}></td>
+					<td><input type="text" title="limit" id="limit" value=${limit}></td>
 				</tr>
 				<tr class="">
 					<td>category:</td>
 					<td>类目</td>
-					<td><input type="text" name="category" id="category"
+					<td><input type="text" title="category" id="category"
 						value=${category}></td>
 				</tr>
 				<tr class="">
 					<td>radius:</td>
 					<td>搜索区域(默认10KM,最大50KM)</td>
-					<td><input type="text" name="radius" id="radius"
+					<td><input type="text" title="radius" id="radius"
 						value=${radius}></td>
 				</tr>
 				<tr class="">
 					<td>deal:</td>
 					<td>是否有团购</td>
-					<td><input type="text" name="deal" id="deal" value=${deal}></td>
+					<td><input type="text" title="deal" id="deal" value=${deal}></td>
 				</tr>
 				<tr class="">
 					<td>city:</td>
 					<td>城市</td>
-					<td><input type="text" name="city" id="city" value=${city}></td>
+					<td><input type="text" title="city" id="city" value=${city}></td>
 				</tr>
 				<tr class="">
 					<td>loc:</td>
 					<td>经纬度</td>
-					<td><input type="text" name="loc" id="loc" value=${loc}></td>
+					<td><input type="text" title="loc" id="loc" value=${loc}></td>
 				</tr>
 				<tr class="">
 					<td>coupon:</td>
 					<td>是否有优惠券</td>
-					<td><input type="text" name="coupon" id="coupon"
+					<td><input type="text" title="coupon" id="coupon"
 						value=${coupon}></td>
 				</tr>
 				<tr class="">
 					<td>reservation:</td>
 					<td>是否支持在线预订</td>
-					<td><input type="text" name="reservation" id="reservation"
+					<td><input type="text" title="reservation" id="reservation"
 						value=${reservation}></td>
 				</tr>
 				<tr class="">
 					<td>sort:</td>
 					<td>排序类型</td>
-					<td><input type="text" name="sort" id="sort" value=${sort}></td>
+					<td><input type="text" title="sort" id="sort" value=${sort}></td>
 				</tr>
 				<tr class="">
 					<td>region:</td>
 					<td>区域名</td>
-					<td><input type="text" name="region" id="region"
+					<td><input type="text" title="region" id="region"
 						value=${region}></td>
 				</tr>
 			</tbody>
 		</table>
 		<p class="api_test">
 			<input class="btn btn-success" type="submit" value="Request">
-			<input type="radio" name="radiobutton" value="business" checked>
-			商户 <input type="radio" name="radiobutton" value="deal"> 团购 <span
+			<input type="radio" title="radiobutton" value="business" checked>
+			商户 <input type="radio" title="radiobutton" value="deal"> 团购 <span
 				id="radioType" style="visibility: hidden">${radio}</span>
 	</form>
 	<pre id="api_result_71" class="brush: js;">${searchModel}</pre>

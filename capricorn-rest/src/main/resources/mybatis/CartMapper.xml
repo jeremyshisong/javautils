@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.vo.Cart">
+
+    <sql id="cart_DETAIL_COLUMN_LIST">
+        FUSER_ID userId,
+        FSTORE_ID storeId,
+        FDRUG_ID drugId,
+        FCOUNT count
+    </sql>
+
+
+    <sql id="cart_drugs_DETAIL_COLUMN_LIST">
+        B.FATTENTION_ITEM attentionItem,
+        B.FBAD_REACTION badReaction,
+        B.FCITY_CODE cityCode,
+        B.FCOMMON_NAME commonName,
+        B.FCOST_PRICE costPrice,
+        B.FDURG_CHARACTERS durgCharacters,
+        B.FDURG_COMPONENT durgComponent,
+        B.FDURG_TOBOO durgToboo,
+        B.FFUNCTIONS_INDICATED functionsIndicated,
+        B.FCATE_CODE cateCode,
+        B.FDRUG_CODE goodsCode,
+        B.FDRUG_NAME goodsName,
+        B.FDRUG_STATUS goodsStatus,
+        B.FDRUG_TYPE goodsType,
+        B.FIS_PRESCRIPTION_DRUGS isPrescriptionDrugs,
+        B.FMANUFACTURER_CODE manufacturerCode,
+        B.FMEMBER_PRICE memberPrice,
+        B.FPOS_MEMBER_PRICE posMemberPrice,
+        B.FRETAIL_PRICE retailPrice,
+        B.FSTANDARD standard,
+        B.FIMAGE imageStatus,
+        B.FSTORE_CODE storeCode,
+        B.FUSAGE_TXT usagetxt,
+        A.FCOUNT count
+    </sql>
+
+    <resultMap id="cartResultMap" type="Cart">
+        <id column="id" property="FID" jdbcType="INTEGER"/>
+        <result column="userId" property="FUSER_ID" jdbcType="VARCHAR"/>
+        <result column="storeId" property="FSTORE_ID" jdbcType="VARCHAR"/>
+        <result column="drugId" property="FDRUG_ID" jdbcType="INTEGER"/>
+        <result column="count" property="FCOUNT" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!-- 插入指定数目的类目信息 -->
+    <insert id="addCarts" useGeneratedKeys="true" parameterType="java.util.List">
+        <selectKey resultType="long" keyProperty="id" order="AFTER">
+            SELECT
+            LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_cart (
+        FUSER_ID,
+        FSTORE_ID,
+        FDRUG_ID,
+        FCOUNT)
+        VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.userId},#{item.storeId},#{item.drugId},#{item.count})
+        </foreach>
+        ON DUPLICATE KEY UPDATE FCOUNT = #{item.count}
+    </insert>
+
+    <select id="getUserCarts" resultType="com.klx.domain.CartEntity" parameterType="hashmap">
+        SELECT
+        <include refid="cart_drugs_DETAIL_COLUMN_LIST"/>
+        FROM
+        tb_cart A
+        LEFT JOIN
+        tb_drugs B ON A.FDRUG_ID = B.FID
+        WHERE
+        A.FUSER_ID = #{user_id} ORDER BY A.FID
+        limit #{start},#{count}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- 配置定时任务的触发器 -->
+	<bean id="drugsMappingTask" class="com.klx.task.DataMappingTask"
+		init-method="init"></bean>
+
+
+	<bean id="refreshWholeJob"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property title="targetObject">
+			<ref bean="drugsMappingTask" />
+		</property>
+		<property title="targetMethod">
+			<value>initData2DB</value>
+		</property>
+		<property title="concurrent" value="false" />
+	</bean>
+
+	<bean id="refreshImageUpdateJob"
+		  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property title="targetObject">
+			<ref bean="drugsMappingTask" />
+		</property>
+		<property title="targetMethod">
+			<value>uploadImages</value>
+		</property>
+		<property title="concurrent" value="false" />
+	</bean>
+
+	<!-- 添加触发器 -->
+	<bean id="drugsRefreshWholeCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property title="jobDetail">
+			<ref bean="refreshWholeJob" />
+		</property>
+		<property title="cronExpression">
+			<!-- refresh whole data map to Redis every day at 2:30 AM -->
+			<value>0 30 12 1 * ?</value>
+		</property>
+	</bean>
+
+	<!-- 添加触发器 -->
+	<bean id="drugsRefreshImageCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property title="jobDetail">
+			<ref bean="refreshImageUpdateJob" />
+		</property>
+		<property title="cronExpression">
+			<!-- refresh whole data map to Redis every day at 2:30 AM -->
+			<value>0 30 12 * * ?</value>
+		</property>
+	</bean>
+
+
+
+	<!-- 添加调度器-->
+	<bean id="schedulerFactory" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="false">
+		<property title="triggers">
+			<list>
+				<ref bean="drugsRefreshWholeCronTrigger" />
+				<ref bean="drugsRefreshImageCronTrigger" />
+			</list>
+		</property>
+	</bean>
+
+
+</beans>

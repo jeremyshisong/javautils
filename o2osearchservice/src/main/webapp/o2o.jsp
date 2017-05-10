@@ -322,7 +322,7 @@
         val = syntaxHighlight(val);
         $("[id='api_result_71']").html(val);
         var radioType = $("[id='radioType']").text();
-        var radioObject = $("[name='radiobutton']");
+        var radioObject = $("[title='radiobutton']");
         if (radioType.length == 0) {
             hideOther(radioObject[0].value);
         } else {
@@ -352,55 +352,55 @@
 
             <tr class="">
                 <td> keyword:</td>
-                <td><input type="text" name="keyword" id="keyword"
+                <td><input type="text" title="keyword" id="keyword"
                            value=${keyword}></td>
                 <td> 关键词</td>
             </tr>
             <tr class="">
                 <td> city:</td>
-                <td><input type="text" name="city" id="city"
+                <td><input type="text" title="city" id="city"
                            value=${city}></td>
                 <td> 城市</td>
             </tr>
             <tr class="">
                 <td> region:</td>
-                <td><input type="text" name="region" id="region"
+                <td><input type="text" title="region" id="region"
                            value=${region}></td>
                 <td> 区域</td>
             </tr>
             <tr class="">
                 <td> district:</td>
-                <td><input type="text" name="district" id="district"
+                <td><input type="text" title="district" id="district"
                            value=${district}></td>
                 <td> 商圈</td>
             </tr>
             <tr class="">
                 <td> longitude:</td>
-                <td><input type="text" name="longitude" id="longitude"
+                <td><input type="text" title="longitude" id="longitude"
                            value=${longitude}></td>
                 <td> 经度</td>
             </tr>
             <tr class="">
                 <td> latitude:</td>
-                <td><input type="text" name="latitude" id="latitude"
+                <td><input type="text" title="latitude" id="latitude"
                            value=${latitude}></td>
                 <td> 纬度</td>
             </tr>
             <tr class="">
                 <td> page:</td>
-                <td><input type="text" name="page" id="page"
+                <td><input type="text" title="page" id="page"
                            value=${page}></td>
                 <td> 第几页,默认0是第一页</td>
             </tr>
             <tr class="">
                 <td> limit:</td>
-                <td><input type="text" name="limit" id="limit"
+                <td><input type="text" title="limit" id="limit"
                            value=${limit}></td>
                 <td>每页记录数</td>
             </tr>
             <tr class="">
                 <td> sort:</td>
-                <td><select name="sort" id="sort">
+                <td><select title="sort" id="sort">
                         <option value="0" ${sort=="0"?'selected':''}>默认</option>
                         <option value="1" ${sort=="1"?'selected':''}>距离最近</option>
                         <option value="2" ${sort=="2"?'selected':''}>价格最低</option>
@@ -418,12 +418,12 @@
             <tbody>
             <tr class="">
                 <td> keyword:</td>
-                <td><input type="text" name="bref" id="bref" value=${bref}></td>
+                <td><input type="text" title="bref" id="bref" value=${bref}></td>
                 <td> 关键词</td>
             </tr>
             <tr class="">
                 <td> city:</td>
-                <td><input type="text" name="suggestCity" id="suggestCity" value=${suggestCity}></td>
+                <td><input type="text" title="suggestCity" id="suggestCity" value=${suggestCity}></td>
                 <td> 城市</td>
             </tr>
             </tbody>
@@ -431,8 +431,8 @@
     </div>
     <p class="api_test">
 
-        <input type="radio" name="radiobutton" value="business" checked
-               onclick="hideOther(this.value)"> 搜索 <input type="radio" name="radiobutton" value="deal" onclick="hideOther(this.value)">
+        <input type="radio" title="radiobutton" value="business" checked
+               onclick="hideOther(this.value)"> 搜索 <input type="radio" title="radiobutton" value="deal" onclick="hideOther(this.value)">
         联想 <input class="btn btn-success" type="submit" value="Request">
         <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>

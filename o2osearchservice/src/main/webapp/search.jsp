@@ -322,7 +322,7 @@
         val = syntaxHighlight(val);
         $("[id='api_result_71']").html(val);
         var radioType = $("[id='radioType']").text();
-        var radioObject = $("[name='radiobutton']");
+        var radioObject = $("[title='radiobutton']");
         if (radioType.length == 0) {
             hideOther(radioObject[0].value);
         } else {
@@ -360,37 +360,37 @@
             <tr class="">
                 <td>keyword:</td>
                 <td>搜索关键词</td>
-                <td><input type="text" name="keyword" id="keyword"
+                <td><input type="text" title="keyword" id="keyword"
                            value=${keyword}></td>
             </tr>
             <tr class="">
                 <td>bizid:</td>
                 <td>业务类型</td>
-                <td><input type="text" name="bizid" id="bizid" value=${bizid}>
+                <td><input type="text" title="bizid" id="bizid" value=${bizid}>
                 </td>
             </tr>
             <tr class="">
                 <td>ruleId:</td>
                 <td>搜索规则</td>
-                <td><input type="text" name="ruleId" id="ruleId"
+                <td><input type="text" title="ruleId" id="ruleId"
                            value=${ruleId}></td>
             </tr>
             <tr class="">
                 <td>Query Parameters:</td>
                 <td>如key1=val1&key2=val2</td>
-                <td><input type="text" name="queryParame" id="queryParame"
+                <td><input type="text" title="queryParame" id="queryParame"
                            value=${queryParame}></td>
             </tr>
             <tr class="">
                 <td>start:</td>
                 <td>开始页数</td>
-                <td><input type="text" name="start" id="start"
+                <td><input type="text" title="start" id="start"
                            value=${start}></td>
             </tr>
             <tr class="">
                 <td>rows</td>
                 <td>每页数目</td>
-                <td><input type="text" name="rows" id="rows"
+                <td><input type="text" title="rows" id="rows"
                            value=${rows}></td>
             </tr>
             </tbody>
@@ -410,16 +410,16 @@
             <tr class="">
                 <td>keyword:</td>
                 <td>联想关键词</td>
-                <td><input type="text" name="brief" id="brief" value=${brief}></td>
+                <td><input type="text" title="brief" id="brief" value=${brief}></td>
             </tr>
             </tbody>
         </table>
     </div>
     <p class="api_test">
         <input class="btn btn-success" type="submit" value="Request">
-        <input type="radio" name="radiobutton" value="business" checked
+        <input type="radio" title="radiobutton" value="business" checked
                onclick="hideOther(this.value)"> 搜索 <input type="radio"
-                                                          name="radiobutton" value="deal"
+                                                          title="radiobutton" value="deal"
                                                           onclick="hideOther(this.value)">
         联想 <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>

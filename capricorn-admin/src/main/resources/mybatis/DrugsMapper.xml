@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.vo.Drug">
+
+    <sql id="drugs_DETAIL_COLUMN_LIST">
+        FATTENTION_ITEM attentionItem,
+        FBAD_REACTION badReaction,
+        FCITY_CODE cityCode,
+        FCOMMON_NAME commonName,
+        FCOST_PRICE costPrice,
+        FDURG_CHARACTERS durgCharacters,
+        FDURG_COMPONENT durgComponent,
+        FDURG_TOBOO durgToboo,
+        FFUNCTIONS_INDICATED functionsIndicated,
+        FCATE_CODE cateCode,
+        FDRUG_CODE goodsCode,
+        FDRUG_NAME goodsName,
+        FDRUG_STATUS goodsStatus,
+        FDRUG_TYPE goodsType,
+        FIS_PRESCRIPTION_DRUGS isPrescriptionDrugs,
+        FMANUFACTURER_CODE manufacturerCode,
+        FMEMBER_PRICE memberPrice,
+        FPOS_MEMBER_PRICE posMemberPrice,
+        FRETAIL_PRICE retailPrice,
+        FSTANDARD standard,
+        FIMAGE imageStatus,
+        FSTORE_CODE storeCode,
+        FUSAGE_TXT usagetxt
+    </sql>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getDrugsByCate" resultType="com.klx.vo.Drug" parameterType="hashmap">
+        SELECT
+        <include refid="drugs_DETAIL_COLUMN_LIST"/>
+        FROM tb_drugs
+        where FCATE_CODE = #{cate_code}
+        ORDER BY FID
+        LIMIT #{start},#{count}
+    </select>
+
+    <!-- 获取指定数目的视频信息 -->
+    <select id="getDrugsByName" resultType="com.klx.vo.Drug" parameterType="hashmap">
+        SELECT
+        <include refid="drugs_DETAIL_COLUMN_LIST"/>
+        FROM tb_drugs
+        where FDRUG_NAME like '%${drug_name}%'
+        ORDER BY FID
+        LIMIT #{start},#{count}
+    </select>
+
+
+</mapper>

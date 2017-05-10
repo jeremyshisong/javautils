@@ -10,7 +10,7 @@
     <artifactId>videocache</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>videocache</name>
+    <title>videocache</title>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

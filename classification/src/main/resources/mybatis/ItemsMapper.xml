@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nlp.repository.dao.ItemsDaoImpl">
+    <select id="selectAllItems" resultType="com.nlp.repository.bean.Item"
+            fetchSize="-2147483648">
+		SELECT
+		FNAME title,
+		FCAT cate
+		FROM
+		T_GALAXY_GOODS_0
+		LIMIT
+		#{start},#{limit}
+	</select>
+
+    <select id="selectAllCates" resultType="string"
+            fetchSize="-2147483648">
+		SELECT
+		DISTINCT (FCAT)
+		FROM
+		T_GALAXY_GOODS_0
+	</select>
+
+</mapper>

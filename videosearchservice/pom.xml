@@ -10,7 +10,7 @@
     <artifactId>videosearchservice</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>videosearchservice</name>
+    <title>videosearchservice</title>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>

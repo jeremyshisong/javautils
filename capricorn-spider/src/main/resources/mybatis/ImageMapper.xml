@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.klx.storage.vo.Drug">
+    <!-- 插入指定数目的类目信息 -->
+    <update id="updateDrugImage" parameterType="java.util.List">
+        UPDATE tb_drugs
+        SET FIMAGE = #{image_status}
+        WHERE FDRUG_CODE = #{drug_code}
+    </update>
+
+    <select id="getDrugImage" resultType="string" parameterType="hashmap">
+        SELECT
+        FDRUG_CODE
+        FROM tb_drugs WHERE FIMAGE &lt; 1 ORDER  BY FID
+        limit #{start},#{count}
+    </select>
+
+</mapper>

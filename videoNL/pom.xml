@@ -10,7 +10,7 @@
     <artifactId>videoNL</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>videoNL</name>
+    <title>videoNL</title>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>

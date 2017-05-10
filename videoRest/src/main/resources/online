@@ -1,0 +1,2 @@
+q=status:1 AND (mzcid:1 OR mzcid:2 OR mzcid:3 OR mzcid:4)
+AND title:$<<keyword>> &fq=(playDate:*)&start=$<<start>>&rows=$<<rows>>&defType=edismax&mm=2<100%&sort=playCount desc&fl=id,title, director, actor, master, guest, playCount,cpid:cpSource,mzcid,voiceActor,score,playDate

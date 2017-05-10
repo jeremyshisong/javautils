@@ -322,7 +322,7 @@
         val = syntaxHighlight(val);
         $("[id='api_result_71']").html(val);
         var radioType = $("[id='radioType']").text();
-        var radioObject = $("[name='radiobutton']");
+        var radioObject = $("[title='radiobutton']");
         if (radioType.length == 0) {
             hideOther(radioObject[0].value);
         } else {
@@ -352,19 +352,19 @@
 
             <tr class="">
                 <td> keyword:</td>
-                <td><input type="text" name="keyword" id="keyword"
+                <td><input type="text" title="keyword" id="keyword"
                            value="${keyword}"></td>
                 <td> 关键词</td>
             </tr>
             <tr class="">
                 <td> page:</td>
-                <td><input type="text" name="page" id="page"
+                <td><input type="text" title="page" id="page"
                            value="${page}"></td>
                 <td> 第几页,默认0是第一页</td>
             </tr>
             <tr class="">
                 <td> limit:</td>
-                <td><input type="text" name="limit" id="limit"
+                <td><input type="text" title="limit" id="limit"
                            value="${limit}"></td>
                 <td>每页记录数</td>
             </tr>
@@ -376,7 +376,7 @@
             <tbody>
             <tr class="">
                 <td> keyword:</td>
-                <td><input type="text" name="bref" id="bref" value="${bref}"></td>
+                <td><input type="text" title="bref" id="bref" value="${bref}"></td>
                 <td> 关键词</td>
             </tr>
             </tbody>
@@ -384,8 +384,8 @@
     </div>
     <p class="api_test">
 
-        <input type="radio" name="radiobutton" value="business" checked
-               onclick="hideOther(this.value)"> 搜索 <input type="radio" name="radiobutton" value="deal" onclick="hideOther(this.value)">
+        <input type="radio" title="radiobutton" value="business" checked
+               onclick="hideOther(this.value)"> 搜索 <input type="radio" title="radiobutton" value="deal" onclick="hideOther(this.value)">
         联想 <input class="btn btn-success" type="submit" value="Request">
         <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>

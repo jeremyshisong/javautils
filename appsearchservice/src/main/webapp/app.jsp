@@ -322,7 +322,7 @@
         val = syntaxHighlight(val);
         $("[id='api_result_71']").html(val);
         var radioType = $("[id='radioType']").text();
-        var radioObject = $("[name='radiobutton']");
+        var radioObject = $("[title='radiobutton']");
         if (radioType.length == 0) {
             hideOther(radioObject[0].value);
         } else {
@@ -351,7 +351,7 @@
             <tbody>
 
             <tr class="">
-                <td><input type="text" name="keyword" id="keyword"
+                <td><input type="text" title="keyword" id="keyword"
                            value=${keyword}></td>
             </tr>
             </tbody>
@@ -362,15 +362,15 @@
         <table id="api_params_72" class="params">
             <tbody>
             <tr class="">
-                <td><input type="text" name="brief" id="brief" value=${brief}></td>
+                <td><input type="text" title="brief" id="brief" value=${brief}></td>
             </tr>
             </tbody>
         </table>
     </div>
     <p class="api_test">
 
-        <input type="radio" name="radiobutton" value="business" checked
-               onclick="hideOther(this.value)"> 搜索 <input type="radio" name="radiobutton" value="deal" onclick="hideOther(this.value)">
+        <input type="radio" title="radiobutton" value="business" checked
+               onclick="hideOther(this.value)"> 搜索 <input type="radio" title="radiobutton" value="deal" onclick="hideOther(this.value)">
         联想 <input class="btn btn-success" type="submit" value="Request">
         <span id="radioType" style="visibility: hidden">${radio}</span>
 </form>

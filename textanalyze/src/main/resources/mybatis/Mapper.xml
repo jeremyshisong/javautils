@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.core.nlp.dao.impl.GoodsDaoImpl">
+
+    <select id="selectAllItems" resultType="com.core.nlp.entity.Item"
+            fetchSize="-2147483648">
+		SELECT
+		FNAME title,
+		FCAT category
+		FROM
+		T_GALAXY_GOODS_0
+		LIMIT
+		#{start},#{limit}
+	</select>
+
+</mapper>

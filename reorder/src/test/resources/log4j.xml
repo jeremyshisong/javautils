@@ -3,30 +3,30 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
 
-    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+    <appender title="console" class="org.apache.log4j.ConsoleAppender">
 
-        <param name="Target" value="System.out"/>
+        <param title="Target" value="System.out"/>
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} [%-5p][%t] %l - %m%n"/>
+            <param title="ConversionPattern" value="%d{HH:mm:ss.SSS} [%-5p][%t] %l - %m%n"/>
         </layout>
     </appender>
 
-    <logger name="org.springframework">
+    <logger title="org.springframework">
         <level value="warn"/>
     </logger>
 
-    <logger name="org.apache.zookeeper">
+    <logger title="org.apache.zookeeper">
         <level value="warn"/>
     </logger>
 
-    <logger name="org.I0Itec">
+    <logger title="org.I0Itec">
         <level value="warn"/>
     </logger>
-    <logger name="com.taobao">
+    <logger title="com.taobao">
         <level value="warn"/>
     </logger>
 
-    <logger name="com.meizu.yard">
+    <logger title="com.meizu.yard">
         <level value="warn"/>
     </logger>
     <root>
