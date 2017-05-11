@@ -40,10 +40,10 @@
 
     <context:annotation-config/>
 
-    <context:component-scan base-package="com.nlp.repository.dao"/>
-    <context:component-scan base-package="com.nlp.indexing"/>
+    <context:component-scan base-package="com.meizu.nlp.classification.repository.dao"/>
+    <context:component-scan base-package="com.meizu.nlp.classification.indexing"/>
     <context:component-scan base-package="com.nlp.classification"/>
-    <context:component-scan base-package="com.nlp.category"/>
+    <context:component-scan base-package="com.meizu.nlp.classification.category"/>
 
 
 </beans>

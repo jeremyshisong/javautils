@@ -59,6 +59,7 @@
         <option value="$PROJECT_DIR$/segment-analysis/pom.xml" />
         <option value="$PROJECT_DIR$/classification/pom.xml" />
         <option value="$PROJECT_DIR$/classification-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/lucene-classification/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -32,6 +32,7 @@
         <module>classification</module>
         <module>classification-demo</module>
         <module>classification-demo</module>
+        <module>lucene-classification</module>
     </modules>
     <dependencies>
         <dependency>

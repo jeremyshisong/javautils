@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.nlp</groupId>
+            <groupId>com.meizu.nlp</groupId>
             <artifactId>classification</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

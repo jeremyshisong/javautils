@@ -141,6 +141,13 @@
         <processorPath useClasspath="true" />
         <module name="classification" />
       </profile>
+      <profile default="false" name="Annotation profile for lucene-classification" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="lucene-classification" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="appsearchservice" target="1.5" />
@@ -166,6 +173,7 @@
       <module name="jobseeker" target="1.5" />
       <module name="kiev_client" target="1.5" />
       <module name="kwRunner" target="1.5" />
+      <module name="lucene-classification" target="1.7" />
       <module name="o2osearchservice" target="1.5" />
       <module name="picservice" target="1.5" />
       <module name="reorder" target="1.5" />
