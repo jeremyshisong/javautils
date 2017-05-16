@@ -14,26 +14,26 @@
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property title="configLocation" value="classpath:config/capricorn-drugs-task-mybatis.xml"/>
-        <property title="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:config/capricorn-drugs-task-mybatis.xml"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-        <property title="driverClass" value="com.mysql.jdbc.Driver"></property>
-        <property title="jdbcUrl"
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl"
                   value="jdbc:mysql://120.77.3.160/xdb?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull"></property>
-        <property title="user" value="xops"></property>
-        <property title="password" value="ThinkBig@123"></property>
-        <property title="acquireIncrement" value="3"></property>
-        <property title="initialPoolSize" value="5"></property>
-        <property title="maxIdleTime" value="300"></property>
-        <property title="maxPoolSize" value="10"></property>
-        <property title="minPoolSize" value="5"></property>
-        <property title="acquireRetryDelay" value="1000"></property>
-        <property title="acquireRetryAttempts" value="60"></property>
-        <property title="breakAfterAcquireFailure" value="false"></property>
+        <property name="user" value="xops"></property>
+        <property name="password" value="xxxx"></property>
+        <property name="acquireIncrement" value="3"></property>
+        <property name="initialPoolSize" value="5"></property>
+        <property name="maxIdleTime" value="300"></property>
+        <property name="maxPoolSize" value="10"></property>
+        <property name="minPoolSize" value="5"></property>
+        <property name="acquireRetryDelay" value="1000"></property>
+        <property name="acquireRetryAttempts" value="60"></property>
+        <property name="breakAfterAcquireFailure" value="false"></property>
     </bean>
 
     <context:component-scan base-package="com.klx.cache"></context:component-scan>

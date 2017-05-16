@@ -4,7 +4,7 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
 	<bean id="yardConfig" class="com.meizu.yard.spring.YardPropertiesHolder">
-		<property title="location">
+		<property name="location">
 			<value>http://yard.meizu.com/conf/galaxy/video-task/V1.0</value>
 		</property>
 	</bean>

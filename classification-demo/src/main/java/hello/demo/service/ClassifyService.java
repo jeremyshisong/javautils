@@ -9,7 +9,7 @@ package hello.demo.service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.meizu.nlp.classification.ClassificationResult;
-import com.meizu.nlp.classification.Classify;
+import com.meizu.nlp.classification.category.Classify;
 import com.meizu.nlp.classification.category.CategoryTree;
 import com.meizu.nlp.classification.category.ClassifyLoader;
 import org.apache.lucene.util.BytesRef;

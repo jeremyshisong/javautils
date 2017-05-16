@@ -42,6 +42,7 @@
         <module name="jsonGzip (1)" />
         <module name="kiev_client" />
         <module name="kwRunner" />
+        <module name="news-title" />
         <module name="o2osearchservice" />
         <module name="picservice" />
         <module name="reorder" />
@@ -174,6 +175,7 @@
       <module name="kiev_client" target="1.5" />
       <module name="kwRunner" target="1.5" />
       <module name="lucene-classification" target="1.7" />
+      <module name="news-title" target="1.5" />
       <module name="o2osearchservice" target="1.5" />
       <module name="picservice" target="1.5" />
       <module name="reorder" target="1.5" />

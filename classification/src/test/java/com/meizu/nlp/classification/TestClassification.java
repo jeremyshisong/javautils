@@ -1,5 +1,6 @@
 package com.meizu.nlp.classification;
 
+import com.meizu.nlp.classification.category.Classify;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

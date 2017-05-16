@@ -15,27 +15,27 @@
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property title="configLocation" value="classpath:mybatis/mybatis.xml"/>
-        <property title="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis/mybatis.xml"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <bean id="dataSource" class="com.meizu.jdbc.druid.DruidBalanceDataSource" destroy-method="close">
-        <property title="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property title="writeJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
-        <property title="readJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
-        <property title="username" value="root"/>
-        <property title="password" value="meizu.com"/>
-        <property title="maxActive" value="140"/>
-        <property title="initialSize" value="1"/>
-        <property title="maxWait" value="60000"/>
-        <property title="minIdle" value="3"/>
-        <property title="timeBetweenEvictionRunsMillis" value="60000"/>
-        <property title="minEvictableIdleTimeMillis" value="360000"/>
-        <property title="validationQuery" value="select 1"/>
-        <property title="testWhileIdle" value="true"/>
-        <property title="testOnBorrow" value="true"/>
-        <property title="testOnReturn" value="true"/>
-        <property title="maxPoolPreparedStatementPerConnectionSize" value="50"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="writeJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
+        <property name="readJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="xxxxx"/>
+        <property name="maxActive" value="140"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="3"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="360000"/>
+        <property name="validationQuery" value="select 1"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="50"/>
     </bean>
 
     <context:annotation-config/>

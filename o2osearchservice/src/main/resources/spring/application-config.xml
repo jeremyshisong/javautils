@@ -7,7 +7,7 @@
 	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 	 http://www.meizu.com/kiev/schema/service http://www.meizu.com/kiev/schema/service.xsd">
     <bean id="yardConfig" class="com.meizu.yard.spring.YardPropertiesHolder">
-        <property title="locations">
+        <property name="locations">
             <list>
                 <value>http://yard.meizu.com/conf/galaxy/kiev/5.0</value>
                 <value>http://yard.meizu.com/conf/galaxy2/search-facade-kiev/V1.1</value>

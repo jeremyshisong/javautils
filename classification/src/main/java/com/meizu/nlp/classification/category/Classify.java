@@ -1,6 +1,8 @@
-package com.meizu.nlp.classification;
+package com.meizu.nlp.classification.category;
 
 import com.hankcs.lucene.HanLPIndexAnalyzer;
+import com.meizu.nlp.classification.ClassificationResult;
+import com.meizu.nlp.classification.SimpleNaiveBayesClassifier;
 import com.meizu.nlp.classification.constant.Categorys;
 import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;

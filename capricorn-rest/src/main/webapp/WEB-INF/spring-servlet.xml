@@ -13,18 +13,18 @@
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- Example: a logical view title of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
-        <property title="prefix" value="/"/>
-        <property title="suffix" value=""/>
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=""/>
     </bean>
     <bean
             class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-        <property title="mediaTypes">
+        <property name="mediaTypes">
             <map>
                 <!-- 告诉视图解析器，返回的类型为json格式 -->
                 <entry key="json" value="application/json"/>
             </map>
         </property>
-        <property title="defaultViews">
+        <property name="defaultViews">
             <list>
                 <!-- ModelAndView里的数据变成JSON -->
                 <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>

@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/kiev_client/kiev_client.iml" filepath="$PROJECT_DIR$/kiev_client/kiev_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/kwRunner/kwRunner.iml" filepath="$PROJECT_DIR$/kwRunner/kwRunner.iml" />
       <module fileurl="file://$PROJECT_DIR$/lucene-classification/lucene-classification.iml" filepath="$PROJECT_DIR$/lucene-classification/lucene-classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news-title/news-title.iml" filepath="$PROJECT_DIR$/news-title/news-title.iml" />
       <module fileurl="file://$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" filepath="$PROJECT_DIR$/o2osearchservice/o2osearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/picservice/picservice.iml" filepath="$PROJECT_DIR$/picservice/picservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonGzip/redwine.iml" filepath="$PROJECT_DIR$/jsonGzip/redwine.iml" />

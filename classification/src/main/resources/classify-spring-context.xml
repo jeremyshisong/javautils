@@ -24,7 +24,7 @@
         <property name="writeJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
         <property name="readJdbcUrl" value="jdbc:mysql://172.16.10.125/MEIZU_GALAXY2?useUnicode=true"/>
         <property name="username" value="root"/>
-        <property name="password" value="meizu.com"/>
+        <property name="password" value="xxxx"/>
         <property name="maxActive" value="140"/>
         <property name="initialSize" value="1"/>
         <property name="maxWait" value="60000"/>

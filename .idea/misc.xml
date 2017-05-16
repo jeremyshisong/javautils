@@ -60,6 +60,7 @@
         <option value="$PROJECT_DIR$/classification/pom.xml" />
         <option value="$PROJECT_DIR$/classification-demo/pom.xml" />
         <option value="$PROJECT_DIR$/lucene-classification/pom.xml" />
+        <option value="$PROJECT_DIR$/news-title/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

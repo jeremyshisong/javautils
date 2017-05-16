@@ -13,8 +13,8 @@
     <context:component-scan base-package="hello.controller" />
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	        <!-- Example: a logical view title of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
-	        <property title="prefix" value="/"/>
-	        <property title="suffix" value=".jsp"/>
+	        <property name="prefix" value="/"/>
+	        <property name="suffix" value=".jsp"/>
 	</bean>
 
 </beans>
