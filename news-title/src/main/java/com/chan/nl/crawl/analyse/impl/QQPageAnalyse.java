@@ -1,7 +1,6 @@
 package com.chan.nl.crawl.analyse.impl;
 
 import com.chan.nl.crawl.analyse.PageAnalyse;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -13,9 +12,8 @@ import java.util.List;
  * Created by shisong on 17/5/15.
  */
 public class QQPageAnalyse implements PageAnalyse {
-    public List<String> analyse(String html) {
+    public List<String> analysis(Document doc) {
         List<String> ret = new ArrayList<String>();
-        Document doc = Jsoup.parse(html);
         Elements tables = doc.getElementsByTag("table");
         for (Element element : tables) {
             try {

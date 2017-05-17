@@ -7,6 +7,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
@@ -15,7 +17,11 @@ import java.io.IOException;
  */
 public class DownLoad {
 
-    public String getHTML(String url) throws ClientProtocolException, IOException {
+    public Document getDoc(String url) throws IOException {
+        return Jsoup.connect(url).get();
+    }
+
+    public String getJson(String url) throws ClientProtocolException, IOException {
         String ret = null;
         RequestConfig requestConfig = RequestConfig.custom()
                 .setSocketTimeout(5000)   //socket超时
@@ -35,4 +41,5 @@ public class DownLoad {
         }
         return ret;
     }
+
 }
