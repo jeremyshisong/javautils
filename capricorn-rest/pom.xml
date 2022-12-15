@@ -14,7 +14,7 @@
     <packaging>war</packaging>
     <url>http://maven.apache.org</url>
     <properties>
-        <springVersion>3.0.5.RELEASE</springVersion>
+        <springVersion>5.2.20.RELEASE</springVersion>
     </properties>
 
     <dependencies>
